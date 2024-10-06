@@ -1,0 +1,131 @@
+@media screen and (min-width:900px) {
+
+    .dropdown {
+        display: none;
+        all: none;
+    }
+
+
+    .horizontalItems {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 10px;
+        margin: 5px;
+        padding: 0;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        list-style: none;
+    }
+
+    .nav-item {
+        border: 0px solid var(--bordercolor);
+        border-bottom-width: 0px;
+        color: var(--color);
+    }
+
+    .nav-item a {
+        color: inherit;
+        font: inherit;
+        text-decoration: none;
+
+    }
+
+    .nav-item :hover {
+        border: 0px solid var(--bordercolor);
+        color: var(--color);
+        border-bottom-width: 1px;
+        transition: 100ms;
+    }
+
+    button {
+        padding: var(--buttonpadding);
+        border-radius: 0.15rem;
+        background-color: var(--bgColor);
+        border-width: 1px;
+        border-color: var(--bordercolor);
+    }
+}
+
+@media screen and (max-width:899px) {
+
+    .dropdown {
+        display: block;
+        height: 50px;
+        width: 50px;
+        text-align: center;
+        border-width: 1px;
+        border-style: solid;
+        background-color: var(--bgColor);
+        border-color: var(--bordercolor);
+        margin: 5px;
+    }
+
+    .dropdown img {
+        width: 95%;
+        height: 95%;
+    }
+
+    .horizontalItems {
+        display: none;
+    }
+
+    .dropdownItems{
+        position: absolute;
+        z-index: 2;
+        width: 300px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+    .dropdownItems li
+    {
+        border: 1px solid var(--bordercolor);
+        width: 100%;
+        height: 50px;
+        padding: 0;
+        margin: 0;
+        background-color: var(--bgColor);
+        color: var(--color);
+        border-bottom-width: 0px;
+    }
+    .dropdownItems li:first-child
+    {
+        border-top-width: 1px;
+    }
+    .dropdownItems li:last-child
+    {
+        border-bottom-width: 1px;
+    }
+
+    .dropdownItems li>a 
+    {
+        display: inline-block;
+        align-content: center;
+        vertical-align: middle;
+        color: inherit;
+        font: inherit;
+        height: 100%;
+        width: 100%;
+        text-decoration: none;
+        margin: 0 auto;
+    }
+    .dropdownItems li a>button {
+        all:inherit;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+.navbar {
+    width: 100%;
+    background-color: var(--bgColor);
+    height: 75px;
+    vertical-align: middle;
+    align-content: center;
+}

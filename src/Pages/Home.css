@@ -1,0 +1,89 @@
+@media screen and (max-width:1100px) {
+    .fullWidthContainer {
+        background-color: red;
+        display: flex;
+        padding: 100px;
+        height: max-content;
+        gap: 50px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        padding: var(--buttonpadding);
+    }
+
+    .fullWidthContainer p {
+        background-color: green;
+    }
+    .container {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .profilePicFace {
+        width: 150px;
+        height: 150px;
+        aspect-ratio: 1;
+        border-radius: 100px;
+    }
+}
+@media  screen and (min-width:1101px) {
+.container {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.fullWidthContainer {
+    width: 100vw;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    text-wrap: wrap;
+    padding: 100px;
+    gap: 50px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    padding: var(--buttonpadding);
+}
+
+.fullWidthContainer p {
+    text-align: justify;
+    width: 75%;
+    height: 100%;
+    overflow-wrap: break-word;
+    text-wrap: pretty;
+    margin: 0;
+    padding: 0.5rem;
+    background-color: rebeccapurple;
+    text-overflow: ellipsis;
+    word-break: normal;
+    white-space: normal;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+}
+
+.profilePicFace {
+    width: 150px;
+    height: 150px;
+    aspect-ratio: 1;
+    border-radius: 100px;
+}
+
+.fullWidthContainer .profilePicFace {
+    aspect-ratio: 1;
+    height: 100%;
+    width: auto;
+}
+.subDivision
+{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+}
