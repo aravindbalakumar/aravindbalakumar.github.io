@@ -5,11 +5,8 @@ import Menu from './../../Images/Icons/more.png'
 import Close from './../../Images/Icons/close.png'
 import resume from './../../Resume_Aravind.pdf'
 function Navbar() {
-  const [dropdown,SetDropdown]=useState(false);
-  var dropdownToggle=()=>{SetDropdown(
-    !dropdown
-
-  );console.log(dropdown);}
+  const [dropdownState,ToggleDropdownState]=useState(false);
+  var dropdownToggle=()=>ToggleDropdownState(!dropdownState)
 
   return (
     <>
@@ -20,17 +17,15 @@ function Navbar() {
           <li className="nav-item"><a href="#Projects">Projects</a></li>
           <li><a href={resume}><button>Download CV</button></a></li>
         </ul>
-
-        {dropdown===true?
-        <button className="dropdown" onClick={dropdownToggle}><img src={Close} alt='Hamburger' />
+        <button className="dropdown" onClick={dropdownToggle}><img src={dropdownState?Close:Menu} alt='Hamburger' /></button>
+        {dropdownState===true?
           <ul className="dropdownItems">
             <li><a href="#About">About Me</a></li>
             <li><a href="#Skills">Skills</a></li>
             <li><a href="#Projects">Projects</a></li>
             <li><a href={resume}><button>Download CV</button></a></li>
           </ul>
-        </button>
-          :<button className="dropdown" onClick={dropdownToggle}><img src={Menu} alt='Hamburger' /></button>}
+          :<></>}
       </div>
     </>
   );
