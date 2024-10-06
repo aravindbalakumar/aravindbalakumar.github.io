@@ -1,7 +1,7 @@
 import './Home.css';
-import Navbar from '../Widgets/Nav/Navbar.js';
-import ProfilePic from './../Images/profilePicSmall.jpg'
-import SkillContainer from './../Widgets/SkillContainer/SkillContainer.js'
+import Navbar from '../Components/Nav/Navbar.js';
+import ProfilePic from './../Assets/Images/profilePicSmall.jpg'
+import SkillContainer from '../Components/SkillContainer/SkillContainer.js'
 function Home()
 {
     
@@ -19,7 +19,7 @@ function Home()
                 </p>
                 <img className="profilePicFace" src={ProfilePic} alt="profile"></img>
             </div>
-            <div className='fullWidthContainer' id='#Skills'>
+            <div className='fullWidthContainer' id='Skills'>
                
                 <div className='subDivision'> <SkillContainer/></div>
             </div>
