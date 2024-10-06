@@ -9,7 +9,7 @@ function Home()
         <>
         <Navbar></Navbar>
         <div className="container">
-            <div className="fullWidthContainer">
+            <div className="fullWidthContainer" id='About'>
                 
                 <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,

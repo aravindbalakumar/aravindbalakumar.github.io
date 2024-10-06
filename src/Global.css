@@ -3,4 +3,11 @@
     --bgColor:gray;
     --color:black;   
     --bordercolor:white;
+    --navbarheight:75px;
+
+    
+    }
+    #ScrollTo{
+        scroll-margin-top: var(--navbarheight);
+    scroll-behavior:smooth;
     }
