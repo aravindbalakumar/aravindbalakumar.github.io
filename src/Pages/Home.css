@@ -15,11 +15,7 @@
     .fullWidthContainer p {
         background-color: green;
     }
-    .container {
-        display: flex;
-        gap: 10px;
-        flex-direction: column;
-    }
+   
 
     .profilePicFace {
         width: 150px;
@@ -28,12 +24,12 @@
         border-radius: 100px;
     }
 }
-@media  screen and (min-width:1101px) {
 .container {
     display: flex;
     gap: 10px;
     flex-direction: column;
 }
+@media  screen and (min-width:1101px) {
 
 .fullWidthContainer {
     width: 100vw;
