@@ -124,6 +124,7 @@
 
 .navbar {
     position:sticky;
+    top: 0% ;
     width: 100%;
     background-color: var(--bgColor);
     height: 75px;
