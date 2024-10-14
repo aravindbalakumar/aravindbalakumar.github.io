@@ -1,13 +1,21 @@
 :root{
-    --buttonpadding:10px;
+    --buttonpadding:5px;
+    --padding:10px;
     --bgColor:gray;
     --color:black;   
     --bordercolor:white;
+    --componentgap:10px;
     --navbarheight:75px;
-
+    --componentgap:25px;
+    --entitygap:20px;
+    --gap:10px
     
     }
-    #ScrollTo{
-        scroll-margin-top: var(--navbarheight);
-    scroll-behavior:smooth;
+    html{
+        scroll-behavior: smooth;
+        /* transition:ease-out; */
     }
+    .scrollto{
+        scroll-margin-top: var(--navbarheight);
+    }
+    

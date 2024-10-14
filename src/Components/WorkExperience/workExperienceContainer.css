@@ -1,0 +1,100 @@
+/* @media screen and (max-width:739px) {
+    .WrkExpList {
+        display: flex;
+        flex-direction: row;
+        list-style-type:none;
+        width: 100%;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        padding: var(--padding);
+        gap:20px;
+        max-height: 300px;
+        margin: 0px;
+        justify-content: space-between  ;
+    }
+}
+@media  screen and (min-width:740px) {
+    .WrkExpList {
+        display: flex;
+        flex-direction: row;
+        list-style-type:none;
+        width: max-content;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        padding: 10px;
+        flex-wrap: wrap;
+        gap:20px;
+        max-height: 300px;
+        max-width: fit-content;
+        margin: 0px;
+        justify-content: center;
+    }
+} */
+@media screen and (min-width:1101px) {
+    .WrkExpList {
+        display: flex;
+        flex-direction: column;
+        list-style-type:none;
+        width: max-content;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        padding: var(--padding);
+        flex-wrap: wrap;
+        gap:var(--entitygap);
+        max-height: 300px;
+        max-width: fit-content;
+        margin: 0px;
+        justify-content: flex-start;
+    }
+    
+}
+@media screen and (max-width:1100px) {
+    .WrkExpList{
+        display: flex;
+        flex-direction: column;
+        list-style-type:none;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: var(--padding);
+        flex-wrap: wrap;
+        gap:var(--entitygap);
+        margin: 0px;
+        width: fit-content;
+        background-color: aliceblue;
+        justify-content: center;
+    }
+    #JobContainer
+    {
+        width: 300px;
+    }
+}
+/* .WrkExpList {
+    display: flex;
+    flex-direction: column;
+    list-style-type:none;
+    width: max-content;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 10px;
+    flex-wrap: wrap;
+    gap:20px;
+    max-height: 300px;
+    max-width: fit-content;
+    margin: 0px;
+    justify-content: flex-start;
+} */
+#JobName {
+    font-size: 1.rem;
+    font-weight: 900;
+    color: var(--color);
+    padding: 0;
+    margin: 0;
+}
+#Duration #CompanyName{
+
+    font-size: 0.65rem;
+    font-weight: 750;
+    color: var(--color);
+    padding: 0;
+    margin: 0;
+}

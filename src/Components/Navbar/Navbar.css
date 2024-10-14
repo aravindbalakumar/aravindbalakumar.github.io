@@ -39,13 +39,6 @@
         transition: 100ms;
     }
 
-    button {
-        padding: var(--buttonpadding);
-        border-radius: 0.15rem;
-        background-color: var(--bgColor);
-        border-width: 1px;
-        border-color: var(--bordercolor);
-    }
 }
 
 @media screen and (max-width:899px) {
@@ -61,7 +54,7 @@
         background-color: var(--bgColor);
         border-color: var(--bordercolor);
         margin: 5px;
-        padding:5px;
+        padding: 5px;
     }
 
     .dropdown img {
@@ -110,7 +103,7 @@
         font: inherit;
         height: 100%;
         width: 100%;
-        text-align: center ;
+        text-align: center;
         text-decoration: none;
         margin: 0 auto;
     }
@@ -123,13 +116,19 @@
 }
 
 
+button {
+    padding: var(--buttonpadding);
+    border-radius: 0.15rem;
+    background-color: var(--bgColor);
+    border-width: 1px;
+    border-color: var(--bordercolor);
+}
 .navbar {
-    position:sticky;
-    top: 0% ;
+    position: sticky;
+    top: 0%;
     width: 100%;
     background-color: var(--bgColor);
     height: var(--navbarheight);
     vertical-align: middle;
     align-content: center;
 }
-  
