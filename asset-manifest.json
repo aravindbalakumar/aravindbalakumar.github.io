@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.f91802e7.css",
-    "main.js": "/portfolio/static/js/main.56131322.js",
+    "main.js": "/portfolio/static/js/main.df60a708.js",
     "static/media/corporate.png": "/portfolio/static/media/corporate.466832e3749d47f1fa36.png",
     "static/media/Interphase.ttf": "/portfolio/static/media/Interphase.10646b146f1512dca185.ttf",
     "static/media/profilePic.jpg": "/portfolio/static/media/profilePic.b3feeb7e40255b02585b.jpg",
@@ -11,10 +11,10 @@
     "static/media/menu.ico": "/portfolio/static/media/menu.63c64121929d3c631b32.ico",
     "index.html": "/portfolio/index.html",
     "main.f91802e7.css.map": "/portfolio/static/css/main.f91802e7.css.map",
-    "main.56131322.js.map": "/portfolio/static/js/main.56131322.js.map"
+    "main.df60a708.js.map": "/portfolio/static/js/main.df60a708.js.map"
   },
   "entrypoints": [
     "static/css/main.f91802e7.css",
-    "static/js/main.56131322.js"
+    "static/js/main.df60a708.js"
   ]
 }
