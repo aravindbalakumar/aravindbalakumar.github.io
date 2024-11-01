@@ -23,20 +23,23 @@
         border: 0px solid var(--bordercolor);
         border-bottom-width: 0px;
         color: var(--color);
+        font-size: 1.5rem;
+text-transform: capitalize;
+font-family: 'InterPhase';
     }
 
     .nav-item a {
         color: inherit;
         font: inherit;
         text-decoration: none;
-
     }
 
     .nav-item :hover {
-        border: 0px solid var(--bordercolor);
+
+        border-bottom: 1px solid var(--borderColor);;
         color: var(--color);
-        border-bottom-width: 1px;
-        transition: 100ms;
+        /* text-decoration: underline; */
+        transition:all 10ms;
     }
 
 }
@@ -114,20 +117,17 @@
         height: 100%;
     }
 }
-
-
-button {
-    padding: var(--buttonpadding);
-    border-radius: 0.15rem;
-    background-color: var(--bgColor);
-    border-width: 1px;
-    border-color: var(--bordercolor);
+.active
+{
+    text-decoration: underline;
 }
+
 .navbar {
     position: sticky;
     top: 0%;
     width: 100%;
     background-color: var(--bgColor);
+    filter:blur(25%);
     height: var(--navbarheight);
     vertical-align: middle;
     align-content: center;

@@ -1,0 +1,117 @@
+.projectContainer
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: calc(var(--gap)*5);
+    width: 70vw;
+    padding: 100px;
+    list-style: none;
+}
+.projectInstance
+{
+    width: 200px;
+    height: 300px;
+    background-color: white;
+    border: 1px solid #80808044;
+    box-shadow:1px 1px 1px #80808044;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+.prj_fll
+{
+        position: fixed;
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+        z-index: 2;
+        gap:10px;
+        touch-action: none;
+}
+.prj_fll_modal
+{
+    width: 95%;
+    height: 95%;
+    background-color: white;
+    border-radius: 2vh;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    position: fixed;
+}
+.prj_fll_container
+{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    align-items: safe;
+    padding: 25px;
+    width: 90%;
+    height: 90%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    position: relative;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.prj_fll_image
+{
+    width: 40%;
+    height: auto;
+    aspect-ratio: auto;
+}
+.prj_fll_name{
+    text-align: left;
+    width: 100%;
+    font-size: larger;
+    font-weight: bolder;
+}
+.prj_fll_name{
+    text-align: justify;
+    width: 100%;
+    width: fit-content;
+    font-size: larger;
+    font-weight: bolder;
+}
+.project_short_description
+{
+flex-grow: 1;
+text-align: justify;
+}
+.project_name
+{
+    margin-top: 10px;
+font-weight: bolder;
+font-size: large;
+}
+.projectInstance:hover
+{
+   
+    /* scale: ; */
+    background-color: white;
+    box-shadow:2px 2px 2px #00000044;
+    
+}
+.project_image
+{
+    width: 95%;
+    height: 60%;
+    
+    aspect-ratio:1;
+}

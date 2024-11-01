@@ -1,21 +1,54 @@
-:root{
-    --buttonpadding:5px;
-    --padding:10px;
-    --bgColor:gray;
-    --color:black;   
-    --bordercolor:white;
-    --componentgap:10px;
-    --navbarheight:75px;
-    --componentgap:25px;
-    --entitygap:20px;
-    --gap:10px
-    
-    }
-    html{
-        scroll-behavior: smooth;
-        /* transition:ease-out; */
-    }
-    .scrollto{
-        scroll-margin-top: var(--navbarheight);
-    }
-    
+:root {
+    --buttonpadding: 5px;
+    --padding: 10px;
+    --bgColor: #282727;
+    --panelColor:#1E1E1E;
+    --color: #D9D9D9;
+    --borderColor: #FFFFFF;
+    --componentgap: 10px;
+    --navbarheight: 75px;
+    --componentgap: 25px;
+    --entitygap: 20px;
+    --gap: 10px;
+    --mainTitle: 950;
+    --subTitle: 550;
+}
+
+button {
+    padding: var(--buttonpadding);
+    border-radius: 6%;
+    background-color: var(--bgColor);
+    color: var(--color);
+    font-size: medium;
+    max-width: 125px;
+    text-align: center;
+    border: 1px solid var(--color);
+}
+
+html {
+    background: var(--bgColor);
+}
+
+html {
+    scroll-behavior: smooth;
+    /* transition:ease-out; */
+}
+
+.scrollto {
+    scroll-margin-top: var(--navbarheight);
+}
+h2{
+    text-transform: uppercase;
+    font-family: "Interphase";
+    /* font-family: 'InterPhase'; */
+    color: var(--color);
+    padding: 0;
+    margin: 0;
+}
+p{
+    text-transform:none;
+    color: var(--color);
+    font-family:"Interphase";
+    padding: 0;
+    margin: 0
+}

@@ -1,0 +1,131 @@
+
+
+
+.profilePicFace {
+    width: 150px;
+    height: 150px;
+    object-fit:cover;
+    border: 2px solid black;
+    aspect-ratio: 1;
+    border-radius: 100px;
+}
+
+
+@media screen and (min-width:700px){
+    .profilePicFace {
+        width: 200px;
+        height: 200px;
+        object-fit:cover;
+        border: 2px solid black;
+        aspect-ratio: 1;
+        border-radius: 100px;
+    }
+    .fullWidth {
+        display: flex;
+        align-content: center;
+        gap: 20px;
+        justify-content: flex-start;
+        height: fit-content;
+        padding: 50px;
+    }
+    .aboutMeDetail {
+        text-align: left;
+        width: 70%;
+    }
+    
+    .pictureHolder {
+        width: 30%;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #socialMediaHolder
+    {
+        width: fit-content;
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        gap: 10px;
+        height: fit-content;
+        background-color: var(--panelColor);
+        border-radius: 15rem;
+    }
+}
+
+
+@media screen and (max-width:699px){
+    .profilePicFace {
+        width: 150px;
+        height: 150px;
+        object-fit:cover;
+        border: 2px solid black;
+        aspect-ratio: 1;
+        border-radius: 100px;
+    }
+    .fullWidth {
+        display: flex;
+        align-content: center;
+        gap: 20px;
+        justify-content: center;
+        height: fit-content;
+        flex-direction: column-reverse;
+        padding: 50px;
+    }
+    .aboutMeDetail {
+        text-align: left;
+        width: 100%;
+    }
+    
+    .pictureHolder {
+        width: 100%;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #socialMediaHolder
+    {
+        width: fit-content;
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        gap: 10px;
+        height: fit-content;
+        background-color: var(--panelColor);
+        border-radius: 15rem;
+    }
+}
+#Container
+    {
+        padding: 10px;
+        padding-left: 20px;
+        margin-top: 50px;
+        padding-right: 20px;
+        width: fit-content;
+        border-radius: 0.5rem;
+        background-color: var(--panelColor);
+    }
+
+    #skillHolder
+    {
+        width: fit-content;
+        max-width: 60%;
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        gap: 10px;
+        height: fit-content;
+        border-radius: 15rem;
+    }

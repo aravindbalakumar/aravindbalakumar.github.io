@@ -1,0 +1,43 @@
+#blogList
+{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+}
+#blogItem:nth-child(odd)
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+#blogItem:nth-child(even)
+{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+#blogItem
+{
+margin: auto auto;
+background-color: red;
+display: flex;
+gap: 5px;
+width: 80dvw;
+padding: 5px;
+align-items: center;
+}
+#blogThumbImage
+{
+    max-width: 25%;
+    min-width: 10%;
+    height: 1em;
+    padding: var(--padding);
+    background-color: aliceblue;
+object-fit: contain;
+}
+#blogContainer{
+    background-color: aqua;
+ width: 75%;
+ text-align: left;
+ padding: var(--padding);
+}

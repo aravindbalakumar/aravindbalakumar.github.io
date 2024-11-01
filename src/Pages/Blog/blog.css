@@ -1,0 +1,23 @@
+.BlogContainer
+{
+ list-style: none;
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ align-items: center;
+ gap: var(--gap);
+}
+#inlineLeft{
+    display:inline-block;
+    float:left ;
+    max-width:300px;
+    aspect-ratio:auto;
+    margin-right:20px;
+}
+#inlineRight{
+    display:inline-block;
+    float:right ;
+    max-width:300px;
+    aspect-ratio:auto;
+    margin-left:20px;
+}

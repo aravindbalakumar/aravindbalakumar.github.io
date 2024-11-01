@@ -1,0 +1,164 @@
+
+#JobContainer {
+    width: 300px;
+    text-align: left;
+    height: fit-content;
+    clear: both;
+}
+
+
+#Title {
+    font-weight: var(--mainTitle);
+    color: var(--color);
+    padding: 0;
+    margin-bottom: 5px;
+    font-size: larger;
+}
+
+#Line {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-start;
+}
+
+#dot {
+    position: relative;
+    content: "";
+    border: 2px solid var(--borderColor);
+    border-radius: 50%;
+    background-color: var(--panelColor);
+    width: 24px;
+    height: 24px;
+    top: 3px;
+    display: inline-block;
+    left: -12px;
+    z-index: -1;
+    aspect-ratio: 1;
+}
+
+#noDot {
+    position: relative;
+    content: "";
+    border-radius: 50%;
+    width: 27px;
+    height: 27px;
+    top: 0px;
+    display: inline-block;
+    left: -12px;
+    z-index: -1;
+    aspect-ratio: 1;
+}
+
+#SubTitle {
+    font-weight: var(--subTitle);
+    color: var(--color);
+}
+@media screen and (max-width:700px) {
+    .WrkExpList {
+        /* border-left: 1px solid black; */
+        position: relative;
+        width: 2px;
+        left: -100px;
+        background-color: var(--borderColor);
+        padding-bottom: 20px;
+        padding-top: 20px;
+        list-style-type: none;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        gap: calc(var(--gap)*2.5);
+        z-index: -2;
+    }
+    .timeLineContainer{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    
+    }
+    .WrkExpList li:nth-child(odd) #JobContainer
+    {
+        position: relative;
+        
+        
+        
+    }
+    .WrkExpList li:nth-child(even) #JobContainer
+    {
+        position: relative;
+    }
+}
+
+@media screen and (min-width:701px) {
+    .WrkExpList {
+        /* border-left: 1px solid black; */
+        width: 2px;
+        background-color: var(--borderColor);
+        padding-bottom: 20px;
+        padding-top: 20px;
+        list-style-type: none;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        gap: var(--gap);
+        z-index: -2;
+    }
+    .timeLineContainer{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    
+    }
+    .WrkExpList li:nth-child(odd) #JobContainer
+    {
+        position: relative;
+        align-self: flex-end;
+        text-align: right;
+        right: 297px;
+        
+    }
+    .WrkExpList li:nth-child(odd) #JobContainer #Line
+    {
+       flex-direction: row-reverse;
+    }
+    .WrkExpList li:nth-child(odd) #JobContainer #Line #dot
+    {
+       right:   -20px;
+    }
+    .WrkExpList li:nth-child(odd) #JobContainer #Line #dot
+    {
+       left: 12px;
+    }
+    
+    .WrkExpList li:nth-child(even) #JobContainer
+    {
+        position: relative;
+        
+    }
+}
+#icon_work{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    aspect-ratio: 1;
+  }
+  #icon_edu{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    aspect-ratio: 1;
+  }
