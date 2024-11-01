@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.322588f9.css",
-    "main.js": "/portfolio/static/js/main.ed23436d.js",
-    "static/media/0_1.jpg": "/portfolio/static/media/0_1.5dde9784eadad63e94c0.jpg",
-    "static/media/0.jpg": "/portfolio/static/media/0.ef97cbc76c2a482cbfc4.jpg",
-    "static/media/1.jpg": "/portfolio/static/media/1.fac58158a490d1374aa0.jpg",
-    "static/media/1_1.jpg": "/portfolio/static/media/1_1.c8f6d6ad869e4917207e.jpg",
-    "static/media/corporate.png": "/portfolio/static/media/corporate.466832e3749d47f1fa36.png",
-    "static/media/Interphase.ttf": "/portfolio/static/media/Interphase.10646b146f1512dca185.ttf",
-    "static/media/profilePic.jpg": "/portfolio/static/media/profilePic.b3feeb7e40255b02585b.jpg",
-    "static/media/Resume_Aravind.pdf": "/portfolio/static/media/Resume_Aravind.8c9403f7a808b919cce8.pdf",
-    "static/media/profilePicSmall_old.jpg": "/portfolio/static/media/profilePicSmall_old.441f28563e7fd6e58220.jpg",
-    "static/media/close.ico": "/portfolio/static/media/close.70a8f6f71feb3de20bc4.ico",
-    "static/media/menu.ico": "/portfolio/static/media/menu.63c64121929d3c631b32.ico",
-    "index.html": "/portfolio/index.html",
-    "main.322588f9.css.map": "/portfolio/static/css/main.322588f9.css.map",
-    "main.ed23436d.js.map": "/portfolio/static/js/main.ed23436d.js.map"
+    "main.css": "/static/css/main.ea6307cb.css",
+    "main.js": "/static/js/main.9140e48a.js",
+    "static/media/0_1.jpg": "/static/media/0_1.5dde9784eadad63e94c0.jpg",
+    "static/media/0.jpg": "/static/media/0.ef97cbc76c2a482cbfc4.jpg",
+    "static/media/1.jpg": "/static/media/1.fac58158a490d1374aa0.jpg",
+    "static/media/1_1.jpg": "/static/media/1_1.c8f6d6ad869e4917207e.jpg",
+    "static/media/corporate.png": "/static/media/corporate.466832e3749d47f1fa36.png",
+    "static/media/Interphase.ttf": "/static/media/Interphase.10646b146f1512dca185.ttf",
+    "static/media/profilePic.jpg": "/static/media/profilePic.b3feeb7e40255b02585b.jpg",
+    "static/media/Resume_Aravind.pdf": "/static/media/Resume_Aravind.8c9403f7a808b919cce8.pdf",
+    "static/media/profilePicSmall_old.jpg": "/static/media/profilePicSmall_old.441f28563e7fd6e58220.jpg",
+    "static/media/close.ico": "/static/media/close.70a8f6f71feb3de20bc4.ico",
+    "static/media/menu.ico": "/static/media/menu.63c64121929d3c631b32.ico",
+    "index.html": "/index.html",
+    "main.ea6307cb.css.map": "/static/css/main.ea6307cb.css.map",
+    "main.9140e48a.js.map": "/static/js/main.9140e48a.js.map"
   },
   "entrypoints": [
-    "static/css/main.322588f9.css",
-    "static/js/main.ed23436d.js"
+    "static/css/main.ea6307cb.css",
+    "static/js/main.9140e48a.js"
   ]
 }
