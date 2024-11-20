@@ -11,7 +11,7 @@ function Home() {
                 </section>
             <section>
                 <h2>ARAVIND BALAKUMAR SHIVA SANKAR</h2>
-                <p>Game Developer(unity)/website Developer/UI & UX Designer</p>
+                <p id="titleHeld">Game Developer(unity)/website Developer/UI & UX Designer</p>
             </section>
             </center>
 
