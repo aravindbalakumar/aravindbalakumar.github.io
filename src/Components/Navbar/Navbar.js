@@ -7,8 +7,8 @@ import Close from './../../Assets/Images/Icons/close.ico';
 import resume from './../../Assets/Other/Resume_Aravind.pdf';
 import logo from "./../../Assets/Images/Icons/logo.png"
 function Navbar() {
-  const [dropdownState, ToggleDropdownState] = useState(false);
-  var dropdownToggle = () => ToggleDropdownState(!dropdownState)
+  const [navBarDropdownState, TogglenavBarDropdownState] = useState(false);
+  var dropdownToggle = () => TogglenavBarDropdownState(!navBarDropdownState)
 
   return (
     <>
@@ -23,16 +23,9 @@ function Navbar() {
           <li className="nav-item"><Link reloadDocument to="/contact">Contact</Link></li>
           <li><a href={resume}><button>Download CV</button></a></li>
         </ul>
-        <button className="dropdown" onClick={dropdownToggle}><img src={dropdownState ? Close : Menu} alt='Hamburger' /></button>
-        {/* <button className="dropdown" onClick={dropdownToggle}>
-          <div id="hamburger" alt='Hamburger' >
-            <span />
-            <span />
-            <span />
-          </div>
-          </button> */}
-        {dropdownState === true ?
-          <ul className="dropdownItems">
+        <button id="hamburger" onClick={dropdownToggle} className= {navBarDropdownState ? "showNavbarMenu" : "hideNavbarMenu"}><span /><span /><span /></button>
+        {navBarDropdownState === true ?
+          <ul className="navBarDropdownItems">
             <li> <Link reloadDocument to="/">Home</Link> </li>
             <li><Link reloadDocument to="/about" onClick={dropdownToggle}>About Me</Link></li>
             <li><Link reloadDocument to="/blogs" onClick={dropdownToggle}>Blog</Link></li>
