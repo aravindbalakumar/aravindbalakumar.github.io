@@ -23,12 +23,6 @@
         align-items: center;
         padding: var(--buttonpadding);
     }
-    .profilePicFace {
-        width: 150px;
-        height: 150px;
-        aspect-ratio: 1;
-        border-radius: 100px;
-    }
 
     .subDivision
 {
@@ -93,11 +87,6 @@
     overflow: hidden;
 
 }
-
-.profilePicFace {
-    aspect-ratio: 1;
-    border-radius: 100px;
-}
 .subDivision
 {
     height: 100%;
@@ -115,16 +104,22 @@
     height: calc(.55*600px);
     background-color: var(--panelColor);
     border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 } 
 }
 @media screen and (max-width:624px) {
  
     #profilePicContainer
     {
+        display: flex;
         width: 300px;
         height: calc(.55*300px);
         background-color: var(--panelColor);
         border-radius: 20px;
+        justify-content: center;
+        align-items: flex-end;
     }
     
 }
