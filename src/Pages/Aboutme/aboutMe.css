@@ -1,6 +1,3 @@
-
-
-
 .profilePicFace {
     width: 150px;
     height: 150px;
@@ -24,13 +21,15 @@
         display: flex;
         align-content: center;
         gap: 20px;
-        justify-content: flex-start;
+        justify-content: center;
         height: fit-content;
         padding: 50px;
+        /* background-color: var(--panelColor); */
     }
     .aboutMeDetail {
         text-align: left;
-        width: 70%;
+        width: 50%;
+        
     }
     
     .pictureHolder {

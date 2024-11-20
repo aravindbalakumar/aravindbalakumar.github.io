@@ -9,13 +9,12 @@ import bl_im_2_1 from "./../../BlogAssets/Images/2_1.jpg"
 function Blog() {
     return (
         <>
-            <center><h2 >My Projects</h2>
-            </center>
+            <center><h2 id="Container" >Blogs</h2></center>
             <ul className="BlogContainer">
 
 
                 <li><BlogItem imgSrc={bl_im_0}
-                    name="Corporate Headshot" description="A corporate headshot is a professional portrait featuring a clean background, well-lit with lighting.In my corporate headshot, I wear a classic black and white striped T-shirt, adding a touch of modern style while maintaining a polished, professional look. The background is clean and neutral, helping to keep the focus on me, while soft, natural lighting complements my features without casting harsh shadows. My pose is natural, with relaxed shoulders and a slight angle to convey warmth and approachability. Framed from the chest up, the shot highlights a balanced combination of confidence and approachability, creating an image that reflects both my professional and personable side."
+                    name="Corporate Headshot" description="A corporate headshot is a professional portrait featuring a clean background, well-lit with lighting."
                     longDescription={["For the Corporate shot, I pre-plannned certain aspects such as Dress and the location, One of the vital thing was the location used the CSIS buildings green screen to take the professional picture,so that any amount of edit can be done to background",
                         "Secondly,The dress I chose the Black and white stripped for the contrasting colors which presented me in a professional manner. As for the camera I lended  ZV-E10 from the library to take the photograph.",
                         "As far as the shoot goes, I Set the camera settings as below",
@@ -42,7 +41,7 @@ function Blog() {
 
                 <li><BlogItem imgSrc={bl_im_1}
                     name="Aesthetic shot" description=
-                    "This shot was done in nighttime and unlinke corporate headshot this was not preplanned,but however the timing and atmospehere factored into what I wanted to captured. The symmetrical reflection of a brightly lit building framed by golden-hued autumn trees on both sides.The building's vibrant purple lights along with the trees created a contrasting picture with the warm tones of the trees and ambient streetlights.The still water in the foreground mirrors the entire scene, adding depth and doubling the visual impact with its perfect reflection, making the scene feel like it captured the beauty of architecture and nature under night lighting ultimately making it feel almost dreamlike atmosphere"
+                    "This shot was done in perfect timing and atmospehere that factored into the aesthetic feel of what I wanted to captured."
                     longDescription={["This shot was done in nighttime and unlinke corporate headshot this was not preplanned,but however the timing and atmospehere factored into what I wanted to captured. The symmetrical reflection of a brightly lit building framed by golden-hued autumn trees on both sides.The building's vibrant purple lights along with the trees created a contrasting picture with the warm tones of the trees and ambient streetlights.The still water in the foreground mirrors the entire scene, adding depth and doubling the visual impact with its perfect reflection,",
                         "making the scene feel like it captured the beauty of architecture and nature under night lighting ultimately making it feel almost dreamlike atmosphere",
                         <><br/>

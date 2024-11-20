@@ -5,6 +5,7 @@ import { Route,Link } from 'react-router-dom';
 import Menu from './../../Assets/Images/Icons/menu.ico';
 import Close from './../../Assets/Images/Icons/close.ico';
 import resume from './../../Assets/Other/Resume_Aravind.pdf';
+import logo from "./../../Assets/Images/Icons/logo.png"
 function Navbar() {
   const [dropdownState, ToggleDropdownState] = useState(false);
   var dropdownToggle = () => ToggleDropdownState(!dropdownState)
@@ -13,6 +14,7 @@ function Navbar() {
     <>
     
       <div className='navbar'>
+      <Link reloadDocument to="/"><img id="logo" src={logo}></img></Link>
         <ul className="horizontalItems">
         <li className="nav-item"> <Link reloadDocument to="/">Home</Link> </li>
           <li className="nav-item"> <Link reloadDocument to="/about">About Me</Link> </li>
@@ -22,6 +24,13 @@ function Navbar() {
           <li><a href={resume}><button>Download CV</button></a></li>
         </ul>
         <button className="dropdown" onClick={dropdownToggle}><img src={dropdownState ? Close : Menu} alt='Hamburger' /></button>
+        {/* <button className="dropdown" onClick={dropdownToggle}>
+          <div id="hamburger" alt='Hamburger' >
+            <span />
+            <span />
+            <span />
+          </div>
+          </button> */}
         {dropdownState === true ?
           <ul className="dropdownItems">
             <li> <Link reloadDocument to="/">Home</Link> </li>

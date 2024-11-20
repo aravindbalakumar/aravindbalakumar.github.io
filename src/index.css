@@ -6,14 +6,26 @@
   font-style: normal;
 
 }
+@font-face {
+  font-family: "TT Interphases Pro Mono Trl";
+  src: url("https://db.onlinewebfonts.com/t/2c74ce745a8860bdab8c503f3270b455.eot");
+  src: url("https://db.onlinewebfonts.com/t/2c74ce745a8860bdab8c503f3270b455.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/2c74ce745a8860bdab8c503f3270b455.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/2c74ce745a8860bdab8c503f3270b455.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/2c74ce745a8860bdab8c503f3270b455.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/2c74ce745a8860bdab8c503f3270b455.svg#TT Interphases Pro Mono Trl")format("svg");
+}
+html{
+  font-family: "TT Interphases Pro Mono Trl";
+}
 body {
   margin: 0;
   width: 100%;
-  font-family: "Interphase";
+  font-family: "TT Interphases Pro Mono Trl";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: "Interphase";
+  font-family: "TT Interphases Pro Mono Trl";
 }

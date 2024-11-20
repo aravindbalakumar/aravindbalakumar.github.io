@@ -130,8 +130,6 @@
 }
 #profilePic{
     width: 60%;
-    top:-15%;
-    position: relative;
     aspect-ratio: 1;
 }
 #introContainer

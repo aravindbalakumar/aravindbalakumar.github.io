@@ -1,26 +1,17 @@
-.blogInstance {
-    width:75vw;
-    height: min-content;
-    max-height: 400px;
-    min-height: 150px;
-    border-radius: height;
-    background-color: var(--panelColor);
-    /* border: 1px solid var(--borderColor); */
-    /* box-shadow: 1px 1px 1px var(--borderColor); */
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 0.25fr 1fr;
-    /* flex-direction: row; */
-    /* align-items: center; */
-    /* justify-content: flex-start; */
 
-} 
-.prj_fll_description{
+#logo
+{
+    width: 70px;
+    height: 70px;
+    /* padding: 10px; */
+    float: left;
+}
+.blg_fll_description{
     line-height: 1.5rem;
     color:var(--color)
 }
 
-.prj_fll {
+.blg_fll {
     position: fixed;
     display: block;
     width: 100vw;
@@ -36,7 +27,7 @@
     touch-action: none;
 }
 
-.prj_fll_modal {
+.blg_fll_modal {
     width: 95%;
     height: 95%;
     background-color: var(--panelColor);
@@ -48,11 +39,11 @@
     position: fixed;
 }
 
-.prj_fll_container {
-    padding: 50px;
+.blg_fll_container {
+    padding: 25px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 25px;
     align-items: safe;
@@ -66,66 +57,63 @@
     overflow-y: scroll;
     overflow-x: hidden;
 }
-
-.prj_fll_image {
-    max-width: 40%;
-    max-height: 40%;
-    object-fit: contain;
-    aspect-ratio: auto;
-}
-
-.prj_fll_name {
+.blg_fll_name {
     text-align: left;
     width: 100%;
     font-size: larger;
     font-weight: bolder;
     text-transform: uppercase;
-    font-family: "Interphase";
-    /* font-family: 'InterPhase'; */
     color: var(--color);
     padding: 0;
     margin: 0;
-}
-
-.prj_fll_name {
     text-align: justify;
     width: 100%;
     width: fit-content;
     font-size: larger;
     font-weight: bolder;
+    
 }
 
-.project_short_description {
-    flex-grow: 1;
+
+.blg_fll_image {
+    max-width: 40%;
+    max-height: 40%;
+    object-fit: contain;
+    aspect-ratio: auto;
+}
+.blg_Content{
+    display: grid;
+    overflow: hidden;
+    flex-grow: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.15fr 0.7fr 0.15fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+}
+
+.blg_short_description {
+    flex-grow: 0;
     text-align: justify;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    font-size: larger;
     padding: 5px;
+    -webkit-line-clamp: 5;
+    grid-area: 2 / 1 / 3 / 2;
+    
 }
 
-.project_name {
+.blg_name {
     font-weight: bolder;
-    font-size: large;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 2;
-    grid-column-end: 3;
     color: var(--color);
     text-align: center;
     align-items: center;
     align-self: center;
+    grid-area: 1 / 1 / 2 / 2;
     vertical-align: middle;
 }
 
-.project_image {
-    grid-row-start: 1;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: 2;
+.blg_image {
     height: 90%;
+    max-width: 55%;
     align-items: center;
     align-self: center;
     padding: 10px;
@@ -134,4 +122,81 @@
     display: -moz-inline-grid;
     aspect-ratio: 1;
     object-fit: cover;
+}
+.blg_Instance {
+    overflow: hidden;
+    width: 800px;
+    height: 450px;
+    background-color: var(--panelColor);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2%;
+    justify-content: flex-start;
+
+}
+
+
+.blg_Instance {
+    width: 16;
+    height: 9;
+    display: grid;
+    background-color: var(--panelColor);
+    grid-template-columns: 0.4fr 0.6fr;
+    grid-template-rows: 0.2fr 0.7fr 0.1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    }
+    
+    .blog_card {
+        box-sizing: border-box;
+        display: flex;
+        width: 300px;
+        height: 300px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 10px;
+        margin: 10px;
+        background-color: var(--panelColor);
+        }
+.blog_card_image
+{
+    width: min-content;
+    height: 55%;
+    object-fit:contain;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.blog_card_details{
+    height: 25%;
+    max-lines: 5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.blog_card_description{
+    color: var(--color);
+    font-size: 12px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    width: 100%;
+    text-overflow: ellipsis;
+    
+}
+
+
+@media screen and (min-width:800px) {
+    .blg_Instance{
+    width: 800px;
+    height: 450px;
+    }
+    
+}
+
+@media screen and (max-width:799px) {
+    .blg_Instance{
+    width: 400px;
+    height: 225px;
+    }
+    
 }

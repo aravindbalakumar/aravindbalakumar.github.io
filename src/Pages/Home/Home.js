@@ -1,6 +1,7 @@
 import './Home.css';
 import ProfilePic from './../../Assets/Images/corporate.png'
 import MyProjects from './../../Components/MyProjects/MyProjects.js';
+import { Link } from 'react-router-dom';
 function Home() {
 
     return (
@@ -21,8 +22,8 @@ function Home() {
 An developer having worked in different industries predominantly in AR/VR and Game Development,Currently trying to intertwine technical and creative aspect by actively learning skills and also pursuing Interaction and Experience Design
                 </p>
             <section id="introRedirectButtons">
-                <button id="button">Know what I can Provide</button>
-                <button id="button">Know what I did</button>
+            <Link reloadDocument to="/about"> <button id="button">Know what I can Provide</button> </Link>
+                <Link reloadDocument to="/projects"><button id="button">Know more about my works</button></Link>
             </section>
             </section>
         </>

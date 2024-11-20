@@ -2,7 +2,8 @@ import "./project.css"
 function Project()
 {
     return (
-    <div id="projectContainer">
+        
+    <div id="ProjectList">
 
     </div>);
 }

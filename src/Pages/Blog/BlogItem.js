@@ -1,8 +1,7 @@
 import { useState } from "react";
 import "./blogItem.css"
 
-function BlogItem({imgSrc="",name="",description="",longDescription="" ,bottomImage=false})
-{
+function BlogItem({ imgSrc = "", name = "", description = "", longDescription = "", bottomImage = false }) {
     const [expand, SetExpanded] = useState(false);
     var ToggleXpand = () => {
         SetExpanded(!expand);
@@ -17,28 +16,28 @@ function BlogItem({imgSrc="",name="",description="",longDescription="" ,bottomIm
     return (
         <>
             {expand ?
-                <div className="prj_fll" onClick={ToggleXpand}>
-                    < div className="prj_fll_modal">
-                        <div className="prj_fll_container">
-                            {bottomImage?<></>:<img className="prj_fll_image" src={imgSrc} />}
-                            <h2 className="prj_fll_name">{name}</h2>
-                            <p className="prj_fll_description">{longDescription}</p>
-                            {bottomImage?<img className="prj_fll_image" src={imgSrc} />:<></>}
+                <div className="blg_fll" onClick={ToggleXpand}>
+                    < div className="blg_fll_modal">
+                        <div className="blg_fll_container">
+                            {bottomImage ? <></> : <img className="blg_fll_image" src={imgSrc} />}
+                            <h2 className="blg_fll_name">{name}</h2>
+                            <p className="blg_fll_description">{longDescription}</p>
+                            {bottomImage ? <img className="blg_fll_image" src={imgSrc} /> : <></>}
                         </div>
                     </div>
                 </div> :
                 <></>
             }
-            <div className="blogInstance" onClick={ToggleXpand}>
-                <img className="project_image" src={imgSrc}></img>
-                <h2 className="project_name">{name}</h2>
-                <p className="project_short_description">{description}
-                    <br/> 
-                    <br/> 
-                    <button id="button">Read More</button>
-                </p>
+            <div className="blog_card" onClick={ToggleXpand}>
+            <h4>{name}</h4>
+                <img className="blog_card_image" src={imgSrc}></img>
+                <div className="blog_card_details">
                
-            </div>
+                <section  className="blog_card_description">{description}
+                </section>
+                </div>
+                <button className="blog_card_button" id="button">Read More</button>
+                </div>
         </>
     );
 }
