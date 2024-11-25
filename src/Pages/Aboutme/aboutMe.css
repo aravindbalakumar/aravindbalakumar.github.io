@@ -113,6 +113,7 @@
         width: fit-content;
         border-radius: 0.5rem;
         background-color: var(--panelColor);
+        box-shadow: 0px 10px 30px var(--panelColor);
     }
 
     #skillHolder

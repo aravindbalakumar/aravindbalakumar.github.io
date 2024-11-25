@@ -1,38 +1,4 @@
-@media screen and (max-width:1100px) {
-    .fullWidthContainer {
-        width: 90vw;
-        display: flex;
-        padding: 100px;
-        height: max-content;
-        gap: var(--componentgap);
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        padding: var(--buttonpadding);
-    }
-    .fullWidthContainerRev{
-        width: 90vw;
-        display: flex;
-        padding: 100px;
-        height: max-content;
-        gap: var(--componentgap);
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        padding: var(--buttonpadding);
-    }
 
-    .subDivision
-{
-    height: max-content;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-}
 .container {
     display: flex;
     gap: var(--gap);
@@ -40,89 +6,7 @@
     justify-content: center;
     align-items: center;
 }
-@media  screen and (min-width:1101px) {
 
-.fullWidthContainer {
-    width: 80vw;
-    height: max-content;
-    display: flex;
-    flex-wrap: wrap;
-    text-wrap: wrap;
-    padding: 100px;
-    gap: var(--componentgap);
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-content: center;
-    align-items: center;
-    padding: var(--buttonpadding);
-}
-.fullWidthContainerRev{
-
-    width: 80vw;
-    height: max-content;
-    display: flex;
-    flex-wrap: wrap;
-    text-wrap: wrap;
-    padding: 100px;
-    gap: var(--componentgap);
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-content: center;
-    align-items: center;
-    padding: var(--buttonpadding);
-}
-
-.fullWidthContainer p {
-    text-align: justify;
-    width: 75%;
-    height: 100%;
-    overflow-wrap: break-word;
-    text-wrap: pretty;
-    margin: 0;
-    padding: 0.5rem;
-    text-overflow: ellipsis;
-    word-break: normal;
-    white-space: normal;
-    text-overflow: ellipsis;
-    overflow: hidden;
-
-}
-.subDivision
-{
-    height: 100%;
-    width: max-content;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-}
-@media screen and (min-width:625px) {
- 
-#profilePicContainer
-{
-    width: 600px;
-    height: calc(.55*600px);
-    background-color: var(--panelColor);
-    border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-} 
-}
-@media screen and (max-width:624px) {
- 
-    #profilePicContainer
-    {
-        display: flex;
-        width: 300px;
-        height: calc(.55*300px);
-        background-color: var(--panelColor);
-        border-radius: 20px;
-        justify-content: center;
-        align-items: flex-end;
-    }
-    
-}
 #titleHeld
 {
     padding-left: 20px;
@@ -149,5 +33,41 @@ display: flex;
 flex-direction: row;
 flex-wrap: wrap;
 gap: 25px;
-justify-content: space-evenly;
+margin: 25px;
+justify-content: center;
+align-items: center;
+}
+
+
+@media screen and (min-width:625px) {
+ 
+#profilePicContainer
+{
+    width: 600px;
+    margin-top: var(--componentgap);
+    height: calc(.55*600px);
+    background-color: var(--panelColor);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: visible;
+    margin-bottom: var(--componentgap);
+} 
+}
+@media screen and (max-width:624px) {
+ 
+    #profilePicContainer
+    {
+        margin-top: var(--componentgap);
+        display: flex;
+        width: 300px;
+        height: calc(.55*300px);
+        background-color: var(--panelColor);
+        border-radius: 20px;
+        justify-content: center;
+        align-items: flex-end;
+        overflow: visible;
+    }
+    
 }

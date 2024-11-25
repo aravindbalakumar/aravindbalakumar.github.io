@@ -9,7 +9,7 @@ function AboutMe() {
 
     return (
         <>
-        <center><h2 id="Container" >Aboutme</h2></center>
+        <center><h2 id="Container" >About me</h2></center>
             <div className="fullWidth">
             
                 <p className="aboutMeDetail">I'm Aravind Balakumar S., a developer and interaction designer passionate about crafting immersive and intuitive experiences in AR/VR and game development. With a strong technical foundation and a creative approach to problem-solving, I focus on blending the boundaries of technology and user experience. Inspired by projects that integrate biometrics and interactive tech, I’m constantly exploring how new technologies can shape meaningful interactions.

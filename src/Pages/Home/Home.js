@@ -14,18 +14,17 @@ function Home() {
                 <p id="titleHeld">Game Developer(unity)/website Developer/UI & UX Designer</p>
             </section>
             </center>
-
-            <br/>
             <br/>
             <section id="introContainer">
 <p>
 An developer having worked in different industries predominantly in AR/VR and Game Development,Currently trying to intertwine technical and creative aspect by actively learning skills and also pursuing Interaction and Experience Design
                 </p>
+                </section>
             <section id="introRedirectButtons">
-            <Link reloadDocument to="/about"> <button id="button">Know what I can Provide</button> </Link>
-                <Link reloadDocument to="/projects"><button id="button">Know more about my works</button></Link>
+            <Link reloadDocument to="/about"> <button id="bigButton">About Me</button> </Link>
+            <Link reloadDocument to="/projects"><button id="bigButton">Projects</button></Link>
             </section>
-            </section>
+            
         </>
     );
 }

@@ -5,10 +5,8 @@
     --panelColor:#1E1E1E;
     --color: #D9D9D9;
     --borderColor: #FFFFFF;
-    --componentgap: 10px;
-    --navbarheight: 75px;
+    --navbarheight: 60px;
     --componentgap: 25px;
-    --entitygap: 20px;
     --gap: 10px;
     --mainTitle: 950;
     --subTitle: 550;
@@ -25,6 +23,19 @@ button {
     border: 1px solid var(--color);
     cursor: pointer;
 }
+
+button:hover {
+    padding: var(--buttonpadding);
+    border-radius: 6%;
+    background-color: var(--panelColor);
+    color: var(--borderColor);
+    font-size: medium;
+    max-width: 125px;
+    text-align: center;
+    border: 1px solid var(--borderColor);
+    cursor: pointer;
+}
+
 
 html {
     background: var(--bgColor);
@@ -51,4 +62,18 @@ p{
     font-size: 1.25rem;
     padding: 0;
     margin: 0
+}
+#bigButton{
+    padding: 0.5rem;
+    text-transform: uppercase;
+    width: fit-content;
+    font-size: 1.25rem;
+
+}
+#YoutubePlayer
+{
+    width: 80%;
+   max-width: 560px;
+   max-height: fit-content;
+    aspect-ratio: 1.78;
 }

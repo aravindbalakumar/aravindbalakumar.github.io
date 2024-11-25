@@ -5,7 +5,7 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: calc(var(--gap)*5);
+    gap: calc(var(--componentgap)+ var(--componentgap));
     width: 70vw;
     padding: 100px;
     list-style: none;

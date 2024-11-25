@@ -123,31 +123,6 @@
     aspect-ratio: 1;
     object-fit: cover;
 }
-.blg_Instance {
-    overflow: hidden;
-    width: 800px;
-    height: 450px;
-    background-color: var(--panelColor);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 2%;
-    justify-content: flex-start;
-
-}
-
-
-.blg_Instance {
-    width: 16;
-    height: 9;
-    display: grid;
-    background-color: var(--panelColor);
-    grid-template-columns: 0.4fr 0.6fr;
-    grid-template-rows: 0.2fr 0.7fr 0.1fr;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    }
-    
     .blog_card {
         box-sizing: border-box;
         display: flex;
@@ -158,6 +133,7 @@
         align-items: flex-start;
         padding: 10px;
         margin: 10px;
+        box-shadow: 0px 10px 30px var(--panelColor);
         background-color: var(--panelColor);
         }
 .blog_card_image
@@ -167,6 +143,7 @@
     object-fit:contain;
     margin-top: 5px;
     margin-bottom: 5px;
+    align-self: center;
 }
 .blog_card_details{
     height: 25%;
@@ -183,20 +160,51 @@
     text-overflow: ellipsis;
     
 }
-
+.blog_card_button{
+    align-self: flex-end;
+}
 
 @media screen and (min-width:800px) {
     .blg_Instance{
     width: 800px;
     height: 450px;
     }
-    
+    #inlineLeft{
+        display:inline-block;
+        float:left ;
+        max-width:300px;
+        max-height: 300px;
+        aspect-ratio:auto;
+        margin-right:50px;
+    }
+    #inlineRight{
+        display:inline-block;
+        float:right ;
+        max-width:300px;
+        max-height: 300px;
+        aspect-ratio:auto;
+        margin-left:50px;
+    }
 }
 
 @media screen and (max-width:799px) {
-    .blg_Instance{
-    width: 400px;
-    height: 225px;
+  
+    #inlineLeft{
+        display:block;
+        max-width:300px;
+        max-height: 300px;
+        aspect-ratio:auto;
+        margin-top:50px;
+        margin-bottom:50px;
+        justify-self: center;
+    }
+    #inlineRight{
+        display:block;
+        max-width:300px;
+        max-height: 300px;
+        aspect-ratio:auto;
+        margin-top:50px;
+        margin-bottom:50px;
     }
     
 }
