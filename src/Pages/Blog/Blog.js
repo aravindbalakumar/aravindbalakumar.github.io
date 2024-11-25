@@ -97,9 +97,9 @@ function Blog() {
                     longDescription={
                         <><p><br />
                             <br />
-                            Working together as a team on this project, Made me realise how team work make magical things happen, through collaborative effort.
+                            Working together as a team on this project, Made me realise how team work makes magical things happen, through collaborative effort.
                             <br />
-                            I played the role of a continuity person which primarly focused on these parts specifically
+                            I played the role of a continuity person which primarily focused on these parts specifically
                             <ol>
                                 <li> Ensuring there is continuity between the shots</li>
                                 <li> Record and register the duration between each shots</li>
@@ -110,16 +110,12 @@ function Blog() {
                             <br />
 
                             <h4>Planning phase:</h4>
-                            During our Initial meet we finalized on the type of theme we wanted to follow something that shows
-                            how the transition from the old generation to new generation should feel like and finalized it to transitioning from black and white to color
-                            and in our next meet we finalized the product to be of cycle and also drew some draft of how the shots should be.
-                            For the cycles I took on the responsibility of renting/lending them
+                            During our Initial meet we finalized on the type of theme we wanted to follow something that shows how the transition from the old generation to new generation should feel like and finalized it to transitioning from black and white to color and in our next meet we finalized the product to be of cycle and also drew some draft of how the shots should be. For the cycles I took on the responsibility of renting/lending them.
                             <br /><br />
                             <h4>Shoot phase:</h4>
-                            Eventhough we preplanned the shoot, we initially had some difficulty in placing the camera position and place of shot but after a prolonged discussion,
-                            we where able to finalize the location of shots.<br/><img src={bl_im_3_3} id="inlineRight" />
-                            but each shots had it own preparation time and also had the problem of incoming and outgoing traffic.
-                            <br />For each shot,In order to maintain continuity, <b> I ensured that the time duration of each shots and also the continuity between 2 different shots where flawless so I started noting the time</b>
+                            Even though we preplanned the shoot, we initially had some difficulty in placing the camera position and place of shot but after a prolonged discussion, we were able to finalize the location of shots.<br/><img src={bl_im_3_3} id="inlineRight" />
+                            but each shot had its own preparation time and also had the problem of incoming and outgoing traffic.
+                            <br />For each shot,In order to maintain continuity,<b>I ensured that the time duration of each shots and also the continuity between 2 different shots where flawless. For which I started noting the time so that it will be helpful for all of us during editing stage</b>
                             <img src={bl_im_3_1} id="inlineLeft" />
                             <br /><br />
                             <center><table id="table">
@@ -197,7 +193,7 @@ function Blog() {
                             </center>
                             <br /><br />
                             <h4>Editing phase:</h4>
-                            During this phase, we faced the problem of noice and voice over so I took the responsibility of removing the overall noise in <SiAudacity />Audacity and to add depth and base to the Voice Over I used <SiAdobepremierepro />Adobe PremierPRO. And finally after tweaking we where able to finish the video
+                            During this phase, we faced the problem of noise in the naturally recorded sound and voice over being bland so I took the responsibility of  fixing them both. In order to remove the overall noise across sound and voice over I used Audacity <SiAudacity />and to add depth and base to the Voice Over sound I used Adobe PremierPRO. <SiAdobepremierepro /> And finally after tweaking we where able to finish the video
                             <center>
                             <br /><br />
                                 <h4>Video</h4>
