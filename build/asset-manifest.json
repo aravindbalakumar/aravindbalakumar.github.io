@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.4c5b377c.css",
+    "main.js": "/portfolio/static/js/main.3bddb710.js",
+    "static/media/0_1.jpg": "/portfolio/static/media/0_1.5dde9784eadad63e94c0.jpg",
+    "static/media/2.jpg": "/portfolio/static/media/2.8d7e62b0df10d8ea6f29.jpg",
+    "static/media/2_1.jpg": "/portfolio/static/media/2_1.cf1396854f655fb92e00.jpg",
+    "static/media/3_1.jpg": "/portfolio/static/media/3_1.f5cfc461d5135957c82e.jpg",
+    "static/media/0.jpg": "/portfolio/static/media/0.ef97cbc76c2a482cbfc4.jpg",
+    "static/media/1.jpg": "/portfolio/static/media/1.fac58158a490d1374aa0.jpg",
+    "static/media/1_1.jpg": "/portfolio/static/media/1_1.c8f6d6ad869e4917207e.jpg",
+    "static/media/3_3.jpg": "/portfolio/static/media/3_3.a6a98ac7e290a1cce25a.jpg",
+    "static/media/corporate.png": "/portfolio/static/media/corporate.466832e3749d47f1fa36.png",
+    "static/media/Interphase.ttf": "/portfolio/static/media/Interphase.10646b146f1512dca185.ttf",
+    "static/media/profilePic.jpg": "/portfolio/static/media/profilePic.b3feeb7e40255b02585b.jpg",
+    "static/media/Resume_Aravind.pdf": "/portfolio/static/media/Resume_Aravind.8c9403f7a808b919cce8.pdf",
+    "static/media/3.jpg": "/portfolio/static/media/3.859fdef33e0f594b0ed9.jpg",
+    "static/media/profilePicSmall_old.jpg": "/portfolio/static/media/profilePicSmall_old.441f28563e7fd6e58220.jpg",
+    "static/media/logo.png": "/portfolio/static/media/logo.f3faa6d85bb6da1f8ffe.png",
+    "static/media/close.ico": "/portfolio/static/media/close.70a8f6f71feb3de20bc4.ico",
+    "static/media/menu.ico": "/portfolio/static/media/menu.63c64121929d3c631b32.ico",
+    "index.html": "/portfolio/index.html",
+    "main.4c5b377c.css.map": "/portfolio/static/css/main.4c5b377c.css.map",
+    "main.3bddb710.js.map": "/portfolio/static/js/main.3bddb710.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4c5b377c.css",
+    "static/js/main.3bddb710.js"
+  ]
+}
