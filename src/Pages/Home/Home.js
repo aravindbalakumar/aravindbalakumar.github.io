@@ -1,6 +1,6 @@
 import './Home.css';
 import ProfilePic from './../../Assets/Images/corporate.png'
-import MyProjects from './../../Components/MyProjects/MyProjects.js';
+import MyProjects from './../../Pages/MyProjects/MyProjects.js';
 import { Link } from 'react-router-dom';
 function Home() {
 

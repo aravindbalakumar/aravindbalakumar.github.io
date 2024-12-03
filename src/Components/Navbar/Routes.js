@@ -2,8 +2,7 @@ import { HashRouter, Route, Routes } from "react-router-dom";
 import Home from "./../../Pages/Home/Home";
 import About from "./../../Pages/Aboutme/AboutMe";
 import Blog from "./../../Pages/Blog/Blog";
-import Project from "./../../Pages/Projects/Project";
-import MyProjects from "./../../Components/MyProjects/MyProjects";
+import MyProjects from "./../../Pages/MyProjects/MyProjects";
 import Contact from "./../../Pages/Contact/Contact";
 function RouteResources() {
     return (
