@@ -27,7 +27,7 @@
 #dot {
     position: relative;
     content: "";
-    border: 2px solid var(--borderColor);
+    border: 2px solid var(--titleColor);
     border-radius: 50%;
     background-color: var(--panelColor);
     width: 24px;
@@ -145,8 +145,9 @@
     }
 }
 #icon_work{
-    width: 16px;
-    height: 16px;
+    width: 14px;
+    height: 14px;
+    color: var(--titleColor);
     position: absolute;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -154,8 +155,9 @@
     aspect-ratio: 1;
   }
   #icon_edu{
-    width: 16px;
-    height: 16px;
+    width: 14px;
+    height: 14px;
+    color: var(--titleColor);
     position: absolute;
     left: 50%;
     transform: translate(-50%,-50%);

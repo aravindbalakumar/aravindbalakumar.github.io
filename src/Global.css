@@ -4,6 +4,7 @@
     --bgColor: #282727;
     --panelColor:#1E1E1E;
     --color: #D9D9D9;
+    --titleColor:#7db122;
     --borderColor: #FFFFFF;
     --navbarheight: 60px;
     --componentgap: 25px;
@@ -51,7 +52,7 @@ html {
 }
 h3,h4,h2{
     text-transform: uppercase;
-    color: var(--color);
+    color: var(--titleColor);
     padding: 0;
     margin: 0;
 }

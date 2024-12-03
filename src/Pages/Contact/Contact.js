@@ -3,7 +3,7 @@ function Contact()
 {
     return (
         <div className="container">
-          <h2 id="Container">Contact Us</h2>
+          <h2 id="ContactContainer">Contact Us</h2>
           <div className="card">
             <h2>Get in Touch</h2>
             <p>

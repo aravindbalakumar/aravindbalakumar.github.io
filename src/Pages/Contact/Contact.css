@@ -2,12 +2,13 @@
     background-color: var(--bgColor);
     border-radius: 10px;
     padding: 20px;
-    margin: 20px 0;
+    margin: 20px 20px;
     box-shadow: 1px 1px 2px var(--borderColor);
   }
-  
+
   .card h2 {
     margin-top: 0;
+    color: var(--color);
   }
   
   .card p {

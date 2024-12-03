@@ -29,8 +29,8 @@ function BlogItem({ imgSrc = "", name = "", description = "", longDescription = 
                 <></>
             }
             <div className="blog_card" onClick={ToggleXpand}>
-            <center><h4 className="blog_card_title">{name}</h4></center>
-                <img className="blog_card_image" src={imgSrc}></img>
+            <h4 className="blog_card_title">{name}</h4>
+                <div className="blog_card_image_container"><img className="blog_card_image" src={imgSrc}></img></div>
                 <div className="blog_card_details">
                
                 <section  className="blog_card_description">{description}

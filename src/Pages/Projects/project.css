@@ -1,0 +1,68 @@
+#prjt_card {
+    display: grid;
+        width: 40dvw;
+        min-width: 300px;
+        min-height: 290px;
+        height: 40dvh;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(7, 1fr) 0.45fr 1fr;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 2.5%;
+        box-shadow: 0px 10px 30px var(--panelColor);
+        background-color: var(--panelColor);
+}
+#prjt_card_image_container 
+{
+grid-row: 2/6;
+grid-column: 1/6;
+background-color: blueviolet;
+align-content: center;
+justify-items: center;
+overflow: hidden;
+}
+#prjt_card_image{
+    display: block;
+    width: 95%;
+    height: 95%;
+    aspect-ratio: 1;
+    object-fit: contain;
+}
+#prjt_card_title 
+{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start:1 ;
+    grid-column-end:6 ;
+    justify-self: center;
+    background-color: white;
+}
+
+#prjt_card_miniDescription {
+    grid-row-start:6 ;
+    grid-row-end:9;
+    grid-column-start:1 ;
+    grid-column-end: 6;
+    background-color: red;
+}
+
+#prjt_card_skills {
+    grid-row-start:9 ;
+    grid-row-end:10;
+    grid-column-start:1 ;
+    grid-column-end: 4;
+    background-color: green;
+    
+}
+
+#prjt_card_viewMore {
+    grid-row-start:9 ;
+    grid-row-end:10;
+    grid-column-start:4 ;
+    grid-column-end: 6;
+    justify-self: center;
+    align-self: center;
+    background-color: blue;
+}

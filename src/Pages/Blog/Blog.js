@@ -193,7 +193,7 @@ function Blog() {
                             </center>
                             <br /><br />
                             <h4>Editing phase:</h4>
-                            During this phase, we faced the problem of noise in the naturally recorded sound and voice over being bland so I took the responsibility of  fixing them both. In order to remove the overall noise across sound and voice over I used Audacity <SiAudacity />and to add depth and base to the Voice Over sound I used Adobe PremierPRO. <SiAdobepremierepro /> And finally after tweaking we where able to finish the video
+                            During this phase, we faced the problem of noise in the naturally recorded sound and voice over being bland so I took the responsibility of  fixing them both. In order to remove the overall noise across sound and voice over I used Audacity <SiAudacity />and to add depth and base to the Voice Over sound I used Adobe PremierPRO <SiAdobepremierepro /> .  And finally after tweaking we where able to finish the video
                             <center>
                             <br /><br />
                                 <h4>Video</h4>

@@ -3,6 +3,7 @@ import Home from "./../../Pages/Home/Home";
 import About from "./../../Pages/Aboutme/AboutMe";
 import Blog from "./../../Pages/Blog/Blog";
 import Project from "./../../Pages/Projects/Project";
+import MyProjects from "./../../Components/MyProjects/MyProjects";
 import Contact from "./../../Pages/Contact/Contact";
 function RouteResources() {
     return (
@@ -12,7 +13,7 @@ function RouteResources() {
              {/* <Route path="/homepage" element={<Home/>} /> */}
              <Route path="/about" element={<About />} />
              <Route path="/blogs" element={<Blog />} />
-              <Route path="/projects" element={<Project/>}/>
+              <Route path="/projects" element={<MyProjects/>}/>
               <Route path="/contact" element={<Contact/>}/>
          </Routes>
         // </HashRouter>
