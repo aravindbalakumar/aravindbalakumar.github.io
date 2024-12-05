@@ -2,7 +2,8 @@ import "./project.css"
 import { useState } from "react";
 import {techmap} from "../utils";
 function Project({ projectDatum }) {
-   
+   var maxImage=0;
+   const [index, setIndex] = useState(0);
     const [open, OnToggleOpen] = useState(false);
     function ToggleProject() {
         OnToggleOpen(!open);
@@ -13,6 +14,32 @@ function Project({ projectDatum }) {
             document.body.style.overflow = "hidden";
         }
     }
+    maxImage=projectDatum.Images.length;
+    function OnNext()
+    {
+        var tempIndex = index+1;
+        if(tempIndex > maxImage-1)
+        {
+            setIndex(0);
+        }
+        else{
+            console.log(tempIndex+"/"+maxImage);
+            setIndex(tempIndex);
+        }
+    }
+    function OnPrevious()
+    {
+        var tempIndex = index-1;
+        if(tempIndex<0)
+        {
+            console.log(tempIndex);
+            setIndex(maxImage-1);
+        }
+        else{
+            setIndex(tempIndex);
+        }
+    }
+    
     return (
         <>
             {open ?
@@ -23,17 +50,14 @@ function Project({ projectDatum }) {
                         <div id="prjt_popup_contentcontainer">
                             <div id="prjt_popup_content">
                             
-                            {projectDatum.Images.length != 0 ? <>
+                            {maxImage != 0 ? 
+                            <div id="galleryView">
+                            <button onClick={OnPrevious}>&lt;</button>
                                     <div id="prjt_popup_imageContainer">
-
-                                        {projectDatum.Images.map((image, index) => (
-                                            <img id="prjt_popup_image"
-                                                key={index}
-                                                src={require(`./../../Assets/Images/ProjectImages/${image}`)}
-                                            />
-                                        ))}
+                                            <img id="prjt_popup_image" src={require(`./../../Assets/Images/ProjectImages/${projectDatum.Images[index]}`)}/>
                                     </div>
-                                </>
+                                    <button onClick={OnNext}>&gt;</button>
+                                </div>
                                     : <></>}
                                       <section id="prjt_popup_techstack"><h4> Tech and tool used:</h4>
                                     <ul>

@@ -1,23 +1,25 @@
-.BlogContainer
-{
- list-style: none;
- display: flex;
- flex-direction: row;
- flex-wrap: wrap;
- justify-content: center;
- align-items: center;
- gap: var(--gap);
- padding: 0;
-}
 
-#tabledatacolumn{
- padding: 5px;
- font-size: 0.85rem;
+#galleryView{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 50px;
+width: 70%;
+height: 70%;
+align-self: center;
+justify-self: center;
 }
-#table{
-    text-align: center;
-    row-gap: 5px;
-    font-size: 0.95rem;
-    width: fit-content;
-    border: 1px solid var(--bordeColor);
+#gallery_viewPort
+{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+#gallery_image_container{
+
+}
+#gallery_image
+{
+    object-fit: contain;
+    width: 100%;
 }

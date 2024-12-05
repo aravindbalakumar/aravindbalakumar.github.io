@@ -176,23 +176,17 @@
         width: 90%;
 }
 
-#prjt_popup_imageContainer {
-    scroll-snap-type: x mandatory;
-    /* -webkit-overflow-scrolling: touch; */
-    -webkit-overflow-scrolling:auto;
-    scroll-snap-type: mandatory;
-    -ms-scroll-snap-type: mandatory;
-    scroll-snap-points-x: repeat(100%);
-    -ms-scroll-snap-points-x: repeat(100%);
+#prjt_popup_imageContainer 
+{
     display: flex;
-    overflow-x: auto;
-    width: 60%;
+    width: 70%;
+    overflow: hidden;
     height: fit-content;
 }
 
 #prjt_popup_imageContainer> #prjt_popup_image {
-    scroll-snap-align: center;
-    scroll-snap-align: center;
+    /* scroll-snap-align: center; */
+    /* scroll-snap-align: center; */
     height: fit-content;
     width: 100%;
     aspect-ratio: auto;
