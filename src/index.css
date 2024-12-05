@@ -29,3 +29,12 @@ body {
 code {
   font-family: "TT Interphases Pro Mono Trl";
 }
+#footerspec
+{
+  height: 50px;
+  text-align: center;
+  margin-top: 20px;
+  background-color: var(--panelColor);
+ align-content: center; 
+ color: var(--color);
+}

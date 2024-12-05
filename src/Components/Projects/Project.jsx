@@ -51,7 +51,7 @@ function Project({ projectDatum }) {
                             <div id="prjt_popup_content">
                             
                             {maxImage != 0 ? 
-                            <div id="galleryView">
+                            <div id="prjt_popup_galleryView">
                             <button onClick={OnPrevious}>&lt;</button>
                                     <div id="prjt_popup_imageContainer">
                                             <img id="prjt_popup_image" src={require(`./../../Assets/Images/ProjectImages/${projectDatum.Images[index]}`)}/>

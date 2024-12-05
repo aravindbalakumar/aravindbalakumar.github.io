@@ -184,6 +184,16 @@
     height: fit-content;
 }
 
+#prjt_popup_galleryView{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 70%;
+    height: 70%;
+    align-self: center;
+    justify-self: center;
+    }
 #prjt_popup_imageContainer> #prjt_popup_image {
     /* scroll-snap-align: center; */
     /* scroll-snap-align: center; */

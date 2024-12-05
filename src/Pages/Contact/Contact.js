@@ -14,17 +14,17 @@ function Contact() {
           </p>
           <div id="contact_label_value">
             <label htmlFor="name">Name</label>
-            <div id="line" />
+            <hr id="line" />
             <input type="text" id="name" name="name" placeholder="Your name" />
           </div>
           <div id="contact_label_value">
             <label htmlFor="email">Email</label>
-            <div id="line" />
+            <hr id="line" />
             <input type="email" id="email" name="email" placeholder="Your email" />
           </div>
           <div id="contact_label_value">
             <label htmlFor="message">Message</label>
-            <div id="line" />
+            <hr id="line" />
             <textarea id="message" name="message" placeholder="Your message"></textarea>
           </div>
           <button id="button" type="submit">Submit</button>
