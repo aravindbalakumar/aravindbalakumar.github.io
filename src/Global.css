@@ -78,3 +78,76 @@ p{
    max-height: fit-content;
     aspect-ratio: 1.78;
 }
+
+#line
+{
+    width: 100%;
+    background-color: var(--color);
+    height: 1px;
+    display: block;
+    padding: 0;
+    margin: 0;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    filter: blur(0.5px);
+}
+textarea,input
+{
+    outline: none;
+    padding-left: 5px;
+    border: none;
+    background-color: var(--color);
+    box-sizing: border-box;
+  color: var(--panelColor);
+font-size: medium;
+  font-family: "TT Interphases Pro Mono Trl";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+#socialMediaHolder
+{
+
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 10px;
+    height: fit-content;
+    background-color: var(--panelColor);
+    border-radius: 15rem;
+    align-items: center;
+    color:var(--color);
+    
+    
+}
+#socialMediaHolder>a{
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+}
+#socialMediaHolder>a:visited 
+{
+    color: var(--color);
+}
+#socialMediaHolder> a:hover
+{
+    color: var(--borderColor);
+}
+textarea{
+    resize: vertical;
+}
+textarea:focus, input:focus{
+    outline: none;
+    padding-left: 5px;
+    box-sizing: border-box;
+    border: 1px solid var(--color);
+    background-color: var(--panelColor);
+  color: var(--color);
+
+  font-family: "TT Interphases Pro Mono Trl";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

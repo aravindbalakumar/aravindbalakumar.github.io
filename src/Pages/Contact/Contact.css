@@ -1,39 +1,53 @@
-.card {
-    background-color: var(--bgColor);
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px 20px;
-    box-shadow: 1px 1px 2px var(--borderColor);
-  }
+#Contact_card
+{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 60%;
+  height: fit-content;
+  padding: 10px;
+  margin: 50px;
+  border-radius: 2.5%;
+  justify-self:center;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 10px 30px var(--panelColor);
+  background-color: var(--panelColor);
 
-  .card h2 {
-    margin-top: 0;
-    color: var(--color);
-  }
-  
-  .card p {
-    line-height: 1.6;
-    color: var(--color);
-  }
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  form div {
-    margin-bottom: 10px;
-    width: 95%;
-  }
-  label {
-    margin-bottom: 5px;
-    color: var(--color);
-    font-weight: bold;
-  }
-  
-  input, textarea {
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 1rem;
-    width: 100%;
-  }
+}
+#contact_connect
+{
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  flex-direction: column;
+  gap:20px
+}
+#contact_form
+{
+  width: 90%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  gap:25px;
+  justify-content:center;
+  align-items: center;
+}
+#contact_label_value{
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: 5px;
+  width: 100%;
+  margin: 0;
+}
+#contact_label_value > label{
+  color: var(--color);
+  font-weight: 700;
+  text-transform: uppercase;
+width: min-content;
+}
+#contact_label_value > input, #contact_label_value > textarea {
+  width: 100%;
+  min-height: 30px;
+}

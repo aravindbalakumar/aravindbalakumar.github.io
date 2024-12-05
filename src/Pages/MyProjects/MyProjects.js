@@ -1,9 +1,9 @@
 import "./myProjects.css"
 import projectImage from "./../../Assets/Images/profilePicSmall_old.jpg";
 import Project from "../../Components/Projects/Project";
-function MyProjects() {
+import data from "./../../Assets/Other/Projects.json";
 
-    
+function MyProjects() {
     return (
         
         <>
@@ -11,11 +11,8 @@ function MyProjects() {
             </center>
             
             <ul id="myProjects">
-                <li><Project title="TEST" miniDesc="TEST" skill="TEST" /></li>
-                <li><Project title="TEST" miniDesc="TEST" skill="TEST" /></li>
-                <li><Project title="TEST" miniDesc="TEST" skill="TEST" /></li>
-                <li><Project title="TEST" miniDesc="TEST" skill="TEST" /></li>
-                <li><Project title="TEST" miniDesc="TEST" skill="TEST" /></li>
+            {data.Projects.map((projectDatum, index) =>
+                <li><Project key={index} projectDatum={projectDatum} /></li>)}
 
             </ul>
         </>

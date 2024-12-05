@@ -13,7 +13,11 @@
         flex-direction: row;
         justify-content: flex-end;
         gap: var(--gap);
-        margin: 5px;
+        margin-top:0 ;
+        margin-bottom:0 ;
+        height: 100%;
+        margin-left: 5px;
+        margin-right: 5px;
         padding: 0;
         align-items: center;
         align-content: center;
