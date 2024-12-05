@@ -19,6 +19,7 @@ function Navbar() {
         <li className="nav-item"> <Link reloadDocument to="/">Home</Link> </li>
           <li className="nav-item"> <Link reloadDocument to="/about">About Me</Link> </li>
           <li className="nav-item"> <Link reloadDocument to="/blogs">Blog</Link> </li>
+          <li className="nav-item"> <Link reloadDocument to="/gallery">My Media</Link> </li>
           <li className="nav-item"><Link reloadDocument to="/projects">Projects</Link></li>
           <li className="nav-item"><Link reloadDocument to="/contact">Contact</Link></li>
           <li><a href={resume}><button>Download CV</button></a></li>
@@ -29,6 +30,7 @@ function Navbar() {
             <li> <Link reloadDocument to="/">Home</Link> </li>
             <li><Link reloadDocument to="/about" onClick={dropdownToggle}>About Me</Link></li>
             <li><Link reloadDocument to="/blogs" onClick={dropdownToggle}>Blog</Link></li>
+            <li><Link reloadDocument to="/gallery" onClick={dropdownToggle}>My Media</Link></li>
             <li><Link reloadDocument to="/projects" onClick={dropdownToggle}>Projects</Link></li>
           <li><Link reloadDocument to="/contact" onClick={dropdownToggle}>Contact</Link></li>
             <li><a href={resume}><button id="button">Download CV</button></a></li>

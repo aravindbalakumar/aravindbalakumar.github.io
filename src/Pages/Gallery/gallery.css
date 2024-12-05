@@ -1,0 +1,23 @@
+.BlogContainer
+{
+ list-style: none;
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
+ gap: var(--gap);
+ padding: 0;
+}
+
+#tabledatacolumn{
+ padding: 5px;
+ font-size: 0.85rem;
+}
+#table{
+    text-align: center;
+    row-gap: 5px;
+    font-size: 0.95rem;
+    width: fit-content;
+    border: 1px solid var(--bordeColor);
+}

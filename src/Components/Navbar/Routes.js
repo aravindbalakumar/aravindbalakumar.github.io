@@ -4,6 +4,7 @@ import About from "./../../Pages/Aboutme/AboutMe";
 import Blog from "./../../Pages/Blog/Blog";
 import MyProjects from "./../../Pages/MyProjects/MyProjects";
 import Contact from "./../../Pages/Contact/Contact";
+import Gallery from "../../Pages/Gallery/Gallery";
 function RouteResources() {
     return (
          <Routes>
@@ -12,6 +13,8 @@ function RouteResources() {
              {/* <Route path="/homepage" element={<Home/>} /> */}
              <Route path="/about" element={<About />} />
              <Route path="/blogs" element={<Blog />} />
+             
+             <Route path="/gallery" element={<Gallery />} />
               <Route path="/projects" element={<MyProjects/>}/>
               <Route path="/contact" element={<Contact/>}/>
          </Routes>
