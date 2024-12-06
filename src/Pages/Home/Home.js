@@ -1,7 +1,8 @@
 import './Home.css';
 import ProfilePic from './../../Assets/Images/corporate.png'
-import MyProjects from './../../Pages/MyProjects/MyProjects.js';
 import { Link } from 'react-router-dom';
+
+
 function Home() {
 
     return (
@@ -24,7 +25,6 @@ An developer having worked in different industries predominantly in AR/VR and Ga
             <Link reloadDocument to="/about"> <button id="bigButton">About Me</button> </Link>
             <Link reloadDocument to="/projects"><button id="bigButton">Projects</button></Link>
             </section>
-            
         </>
     );
 }

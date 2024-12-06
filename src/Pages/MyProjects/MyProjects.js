@@ -1,9 +1,14 @@
 import "./myProjects.css"
-import projectImage from "./../../Assets/Images/profilePicSmall_old.jpg";
 import Project from "../../Components/Projects/Project";
 import data from "./../../Assets/Other/Projects.json";
 
-function MyProjects() {
+import { useEffect,useState} from 'react';
+import { database } from '../../Components/utils';
+import { onValue, ref } from 'firebase/database';
+
+function MyProjects() 
+{
+    
     return (
         
         <>

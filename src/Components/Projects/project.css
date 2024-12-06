@@ -197,7 +197,8 @@
     align-items: center;
     gap: 50px;
     width: 70%;
-    height: 70%;
+    height: 20%;
+    max-height: 20%;
     align-self: center;
     justify-self: center;
     }
@@ -206,7 +207,7 @@
     /* scroll-snap-align: center; */
     height: fit-content;
     width: 100%;
-    aspect-ratio: auto;
+    aspect-ratio: 1;
     object-fit: contain;
 
 }
