@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './BlogPage.css';
-import img1 from './../../Assets/Images/ProjectImages/ARDecors_2.png'
-import img2 from './../../Assets/Images/ProjectImages/ARDecors_1.png'
+import img1 from './../../Assets/Images/ProjectImages/1_0.png'
+import img2 from './../../Assets/Images/ProjectImages/2_0.png'
 
 
 

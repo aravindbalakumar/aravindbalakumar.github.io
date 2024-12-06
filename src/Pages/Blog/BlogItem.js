@@ -19,9 +19,9 @@ function BlogItem({ imgSrc = "", name = "", description = "", longDescription = 
                 <div className="blg_fll" onClick={ToggleXpand}>
                     < div className="blg_fll_modal">
                         <div className="blg_fll_container">
-                            {topImage ?  <img className="blg_fll_image" src={imgSrc} /> :<></>}
+                            {topImage ?  <img className="blg_fll_image" src={imgSrc}/> :<></>}
                             <h2 className="blg_fll_name">{name}</h2>
-                            <p className="blg_fll_description">{longDescription}</p>
+                            <p className="blg_fll_description" dangerouslySetInnerHTML={{__html:longDescription}}></p>
                             {bottomImage ? <img className="blg_fll_image" src={imgSrc} /> : <></>}
                         </div>
                     </div>

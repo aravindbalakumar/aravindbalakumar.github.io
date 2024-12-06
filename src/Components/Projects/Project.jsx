@@ -74,7 +74,7 @@ function Project({ projectDatum }) {
                                     </div>
                                     <div id="prjt_popup_role">
                                         <h4>Role</h4>
-                                        <div>{projectDatum.Role}</div>
+                                        <div dangerouslySetInnerHTML={{ __html: projectDatum.Role }}></div>
                                     </div>
                                 </div>
                               
