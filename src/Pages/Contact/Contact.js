@@ -4,18 +4,19 @@ import { ref,push } from "firebase/database";
 import { database } from "./../../Components/utils";
 import {GetSocialMedia} from "./../../Components/utils";
 function Contact() {
+  // Used for handling form data(could have been better)
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: '',
   });
-
+  // Used for error handling(could have been better)
   const [errors, setErrors] = useState({
     name: '',
     email: '',
     message: '',
   });
-
+ // called whenever data is changed or called
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -51,15 +52,16 @@ function Contact() {
     return isValid;
   };
 
+  // called when submit is done
   const handleSubmit = async(e) => {
-    e.preventDefault();
+    e.preventDefault(); // remove
 
     if (validateForm()) {
       setErrors(null);
       const newSubmissionRef = ref(database, 'contactFormSubmissions/' + Date.now()); // Using timestamp as unique ID
-      await push(newSubmissionRef, formData);
-      alert('Your message has been sent!');
-      setFormData({ name: '', email: '', message: '' });
+      await push(newSubmissionRef, formData);//wait for the push to finish
+      alert('Your message has been sent!'); //show alert
+      setFormData({ name: '', email: '', message: '' }); // Resets name email and message entry
     }
     
   };

@@ -31,9 +31,10 @@ function JobContainer({ jobName = "Job Name", companyName = "Company Name", from
     return (
 
         <div id="JobContainer">
+            {/* overall div*/}
             <div id='Line'>
                 {/* <div id='dot'>{isWork?<img id="icon_work" src={work}/>:<img id="icon_edu" src={edu}/>}</div> */}
-                
+                {/* dot with circle */}
                 <IconContext.Provider value={{ color: "#d9d9d9", size: "1.0rem" }}>
                 <div id='dot'>{isWork?<FaSuitcase id='icon_work'/>:<FaBookBookmark id="icon_edu"/>}</div>
                 </IconContext.Provider>

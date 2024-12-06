@@ -12,7 +12,7 @@ function Navbar() {
 
   return (
     <>
-    
+    {/* shows the horizontal menu when screnn has enough width */}
       <div className='navbar'>
       <Link reloadDocument to="/"><img id="logo" src={logo}></img></Link>
         <ul className="horizontalItems">
@@ -26,7 +26,9 @@ function Navbar() {
           <li><a href={resume}><button>Download CV</button></a></li>
         </ul>
         <button id="hamburger" onClick={dropdownToggle} className= {navBarDropdownState ? "showNavbarMenu" : "hideNavbarMenu"}><span /><span /><span /></button>
-        {navBarDropdownState === true ?
+        {/* shows the dropdown menu */}
+        {navBarDropdownState === true ? /*check wether the dropdown is open or not */
+        
           <ul className="navBarDropdownItems">
             <li> <Link reloadDocument to="/" onClick={dropdownToggle}>Home</Link> </li>
             <li><Link reloadDocument to="/about" onClick={dropdownToggle}>About</Link></li>

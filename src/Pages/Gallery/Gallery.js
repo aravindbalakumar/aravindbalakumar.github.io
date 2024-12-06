@@ -3,11 +3,11 @@ import "./gallery.css"
 function Gallery() {
 
      var maxImage = 0;
-     const [index, setIndex] = useState(0);
+     const [index, setIndex] = useState(0); // the Image to load
 
 
 
-    
+    // Data of the images
     const images = [
         {
             id:0,
@@ -59,12 +59,13 @@ function Gallery() {
             des:"Feline supermacy",
             src:"Gallery/10.jpg"
         }
-        // Add more image URLs as needed
       ];
       maxImage=images.length;
+      //Loads nextImage 
     function OnNext() {
 
         if (index + 1 > maxImage - 1) {
+            //if next index greter than last index set index to 0 to create infinite scroll 
             setIndex(0);
         }
         else {
@@ -75,6 +76,7 @@ function Gallery() {
     function OnPrevious() {
 
         if (index - 1 < 0) {
+            //if previous index less than 0 set index to last index to create infinite scroll
             setIndex(maxImage - 1);
         }
         else {

@@ -16,13 +16,14 @@ function BlogItem({ blogIndex = "", imgSrc = "", name = "", description = "", lo
             }
         });
     }, [blogIndex]);
-    const [newUsername, setNewUsername] = useState("");
-    const [expand, SetExpanded] = useState(false);
-    const [comments, setComments] = useState([]);
-    const [newComment, setNewComment] = useState("");
-    const [reactions, setReactions] = useState({ like: 0, love: 0 });
+    const [newUsername, setNewUsername] = useState(""); {/*setUsername for setting username  in comments section */}
+    const [expand, SetExpanded] = useState(false); {/*setExpanded for control card popupstae */}
+    const [comments, setComments] = useState([]); {/* setComments state is called when firebase get updated with new comments */}
+    const [newComment, setNewComment] = useState("");{/*setNewComments state to setting the new comment and updating it to the firebase  */}
+    const [reactions, setReactions] = useState({ like: 0, love: 0 });  {/*setReaction state to setting the new comment and updating it to the firebase  */}
     var ToggleXpand = () => {
         SetExpanded(!expand);
+        {/* done for enabling the scroll  */}
         if (expand) {
             document.body.style.overflow = "unset";
         }
@@ -30,9 +31,11 @@ function BlogItem({ blogIndex = "", imgSrc = "", name = "", description = "", lo
             document.body.style.overflow = "hidden";
         }
     }
+    {/*called when comment is added */}
     const addComment = () => {
         if (newComment.trim() && newUsername.trim()) {
             const commentsRef = ref(database, `Blogs/${blogIndex}/comments`);
+            //push is called here so that new content can be set
             push(commentsRef, { user: newUsername, text: newComment }) // Store username and comment
                 .then(() => {
                     setNewComment(""); // Clear input field
@@ -48,7 +51,7 @@ function BlogItem({ blogIndex = "", imgSrc = "", name = "", description = "", lo
 
     // Add a reaction
     const handleReaction = (type) => {
-        const reactionsRef = ref(database, `Blogs/${blogIndex}/reactions`);
+        const reactionsRef = ref(database, `Blogs/${blogIndex}/reactions`); //refs the blog reaction related to blog using blogIndex
         const updatedReactions = { ...reactions, [type]: (reactions[type] || 0) + 1 };
 
         update(reactionsRef, updatedReactions).catch((error) => {
@@ -58,6 +61,7 @@ function BlogItem({ blogIndex = "", imgSrc = "", name = "", description = "", lo
 
     return (
         <>
+            {/*Checks wether th blog popup is open if true shows the full screen popup is shown else none*/}
             {expand ?
                 <div className="blg_fll" >
                     < div className="blg_fll_modal">
@@ -87,6 +91,9 @@ function BlogItem({ blogIndex = "", imgSrc = "", name = "", description = "", lo
                                     <button onClick={addComment}>Add Comment</button>
                                 </form>
                                 <h3>Comments</h3>
+                                {/*
+                                All comments are created
+                                 */}
                                 <ul id="comments_list">
                                     {comments && Object.keys(comments).length > 0
                                         ? Object.values(comments).map((comment, index) => (

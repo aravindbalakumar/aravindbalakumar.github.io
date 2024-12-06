@@ -8,6 +8,7 @@ import Gallery from "../../Pages/Gallery/Gallery";
 // import BlogPage from "../../Pages/CreateBlog/BlogPage";
 function RouteResources() {
     return (
+        // routing for each pages
          <Routes>
              <Route path="/portfolio" element={<Home />} />
              <Route path="/*" element={<Home />} />
