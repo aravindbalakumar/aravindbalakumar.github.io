@@ -187,6 +187,8 @@
     display: flex;
     align-self: flex-start;
     gap:5px;
+    align-items: center;
+    justify-content: flex-start;
     color: var(--color);
 }
 .blog_card_title{
