@@ -61,7 +61,7 @@
         /* border-left: 1px solid black; */
         position: relative;
         width: 2px;
-        left: -100px;
+        left: -120px;
         background-color: var(--borderColor);
         padding-bottom: 20px;
         padding-top: 20px;

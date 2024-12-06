@@ -23,14 +23,17 @@ function AboutMe() {
             </div>
             <center>
                 <h2 id="Container" >WHAT I KNOW</h2>
-                <IconContext.Provider value={{ color: "#d9d9d9", size: "3.5rem" }}>
-                        <section id="skillHolder"><TbBrandUnity /> <TbBrandCSharp /><TbBrandJavascript/>
-                        <TbBrandHtml5/>
-                        <TbBrandReact/>
-                        <TbBrandNodejs/>
-                        <TbBrandCss3/>
-                        <TbBrandGithub/> </section>
-                    </IconContext.Provider>;
+                {/* <IconContext.Provider value={{ color: "#d9d9d9" }}> */}
+                        <section id="skillHolder">
+                            <TbBrandUnity id="skillTag" /> 
+                            <TbBrandCSharp id="skillTag"/>
+                            <TbBrandJavascript id="skillTag"/>
+                        <TbBrandHtml5 id="skillTag"/>
+                        <TbBrandReact id="skillTag"/>
+                        <TbBrandNodejs id="skillTag"/>
+                        <TbBrandCss3 id="skillTag"/>
+                        <TbBrandGithub id="skillTag"/> </section>
+                    {/* </IconContext.Provider>; */}
            
             </center>
             <center>
