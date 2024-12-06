@@ -28,7 +28,7 @@ function Navbar() {
         <button id="hamburger" onClick={dropdownToggle} className= {navBarDropdownState ? "showNavbarMenu" : "hideNavbarMenu"}><span /><span /><span /></button>
         {navBarDropdownState === true ?
           <ul className="navBarDropdownItems">
-            <li> <Link reloadDocument to="/">Home</Link> </li>
+            <li> <Link reloadDocument to="/" onClick={dropdownToggle}>Home</Link> </li>
             <li><Link reloadDocument to="/about" onClick={dropdownToggle}>About</Link></li>
             <li><Link reloadDocument to="/blogs" onClick={dropdownToggle}>Blog</Link></li>
             <li><Link reloadDocument to="/gallery" onClick={dropdownToggle}>Gallery</Link></li>

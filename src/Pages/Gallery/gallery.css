@@ -17,10 +17,10 @@ justify-self: center;
     height: 33%;
     aspect-ratio: 1.78;
     gap: 20px;
-    align-self: center;
+    /* align-self: center; */
     justify-content: center;
     align-items: center;
-    justify-self: center;    
+    /* justify-self: center;     */
 }
 #galleryScroll>button{
     width: fit-content;

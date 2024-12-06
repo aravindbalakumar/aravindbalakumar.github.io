@@ -4,7 +4,7 @@ import {GetSocialMedia} from "./../../Components/utils";
 function Contact() {
   return (
     <>
-
+<center>
       <div id="Contact_card">
         <h2>Get in Touch</h2>
 
@@ -30,6 +30,7 @@ function Contact() {
           <button id="button" type="submit">Submit</button>
         </form>
       </div>
+      </center>
       <div id="contact_connect">
       <h4>Connect with me below</h4>
                         <GetSocialMedia/>

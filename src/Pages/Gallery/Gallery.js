@@ -12,22 +12,52 @@ function Gallery() {
         {
             id:0,
             des:"Corporate Headshot",
-            src:"corporate.png"
+            src:"Gallery/1.jpg"
         },
         {
             id:1,
-            des:"Corporate Headshot",
-            src:"ProjectImages/ARDecors_2.png"
+            des:"UL campus",
+            src:"Gallery/2.jpg"
         },
         {
             id:2,
-            des:"Corporate Headshot",
-            src:"ProjectImages/ARDecors_1.png"
+            des:"Limerick City",
+            src:"Gallery/3.jpg"
         },
         {
             id:3,
-            des:"Corporate Headshot",
-            src:"ProjectImages/ARDecors_3.png"
+            des:"Gang",
+            src:"Gallery/4.jpg"
+        },
+        {
+            id:4,
+            des:"Aisle of poison plants",
+            src:"Gallery/5.jpg"
+        },
+        {
+            id:5,
+            des:"Black valley",
+            src:"Gallery/6.jpg"
+        },
+        {
+            id:6,
+            des:"Murral",
+            src:"Gallery/7.jpg"
+        },
+        {
+            id:7,
+            des:"Estate fountain",
+            src:"Gallery/8.jpg"
+        },
+        {
+            id:8,
+            des:"Night sky",
+            src:"Gallery/9.jpg"
+        },
+        {
+            id:9,
+            des:"Feline supermacy",
+            src:"Gallery/10.jpg"
         }
         // Add more image URLs as needed
       ];
@@ -56,7 +86,7 @@ function Gallery() {
         <>
             <center>
                 <h2 id="Container" >pictures</h2>
-            </center>
+            
             <div id="galleryScroll">
                 <button onClick={OnNext}>&lt;</button>
                 <div id="gallScrollViewCont">
@@ -67,6 +97,7 @@ function Gallery() {
                 </div>
                 <button onClick={OnPrevious}>&gt;</button>
             </div>
+            </center>
             {/* <div id="galleryView">
                 <div id="gall_view_port">
                     {images.map((data,index)=>(

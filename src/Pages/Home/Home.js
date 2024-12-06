@@ -16,11 +16,13 @@ function Home() {
             </section>
             </center>
             <br/>
-            <section id="introContainer">
+            <div id="introContainer">
+            <p>
 
 An developer having worked in different industries predominantly in AR/VR and Game Development,Currently trying to intertwine technical and creative aspect by actively learning skills and also pursuing Interaction and Experience Design
 
-                </section>
+                </p>
+                </div>
             <section id="introRedirectButtons">
             <Link reloadDocument to="/about"> <button id="bigButton">About Me</button> </Link>
             <Link reloadDocument to="/projects"><button id="bigButton">Projects</button></Link>
