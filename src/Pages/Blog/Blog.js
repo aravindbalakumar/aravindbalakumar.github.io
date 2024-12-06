@@ -25,7 +25,7 @@ function Blog() {
             <ul className="BlogContainer">
                 {blogs.map((blogData,blgID)=>(
                     <li>
-                        <BlogItem key={blogData.blgID} imgSrc={blogData.keyImage} description={blogData.description} name={blogData.name} longDescription={blogData.longDescription} bottomImage={blogData.botImage} topImage={blogData.topImage}/>
+                        <BlogItem key={blogData.blgID} blogIndex={blgID} imgSrc={blogData.keyImage} description={blogData.description} name={blogData.name} longDescription={blogData.longDescription} bottomImage={blogData.botImage} topImage={blogData.topImage}/>
                     </li>
                 ))}
 

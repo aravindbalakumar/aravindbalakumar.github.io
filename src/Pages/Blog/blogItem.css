@@ -21,7 +21,6 @@
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    cursor: pointer;
     z-index: 2;
     gap: 10px;
     touch-action: none;
@@ -34,12 +33,18 @@
     border-radius: 2vh;
     left: 50%;
     top: 50%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.05fr 0.95fr;
     transform: translate(-50%, -50%);
     overflow: hidden;
     position: fixed;
 }
 
-.blg_fll_container {
+.blg_fll_container 
+{
+    grid-row:2/3 ;
+    grid-column: 0/1;
     padding: 25px;
     display: flex;
     flex-direction: column;
@@ -148,13 +153,9 @@
         }
 .blog_card_image
 {
-    display: block;    
-    /* justify-self: center; */
-    /* align-content: center; */
-    /* width: fit-content; */
+    display: block;
     height: 100%;
     object-fit: contain;
-    /* align-self: center; */
 }
 .blog_card_details{
     height: 30%;
@@ -171,9 +172,22 @@
     text-overflow: ellipsis;
     
 }
+.blog_card_bot
+{
+    display: flex;
+    height:10%;
+    width: 100%;
+    justify-content: space-between;
+}
 .blog_card_button{
     align-self: flex-end;
-    height: 10%;
+}
+.blog_card_status
+{
+    display: flex;
+    align-self: flex-start;
+    gap:5px;
+    color: var(--color);
 }
 .blog_card_title{
     height: 10%;
@@ -224,7 +238,64 @@
     
     
 }
+.blg_fll_close
+{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    width: fit-content;
+    height: fit-content;
+    align-content: center;
+    justify-self: end;
+    margin: 20px;
+}
 .blog_card:hover {
     transform: scale(1.03); /* Slight zoom effect */
     box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+}
+.comments_section {
+    margin-top: 20px;
+    width: 90%;
+}
+.comments_section >form{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+.comments_section >form >button{
+    align-self: flex-end;
+}
+
+#comments_list{
+    list-style-type: none;
+    width: 100%;
+    color: var(--color);
+    padding: 0;
+}
+#comments_list >li 
+{
+    margin: 5px 0;
+    border-top: 0.15px solid var(--borderColor);
+}
+
+#comments_list >li:first-child
+{
+    margin: 5px 0;
+    border-top: none;
+}
+
+.comments_section input {
+    width: calc(100% - 80px);
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.reactions_section {
+    margin-top: 20px;
+}
+
+.reactions_section button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
 }
