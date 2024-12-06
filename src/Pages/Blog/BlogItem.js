@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { database } from "../../Components/utils";
 import { ref, onValue, update, push } from "firebase/database";
+import { BiSolidLike ,BiSolidHeart,BiSolidMessage} from "react-icons/bi";
 import "./blogItem.css"
 
 function BlogItem({ blogIndex = "", imgSrc = "", name = "", description = "", longDescription = "", bottomImage = false, topImage = false }) {
@@ -68,8 +69,8 @@ function BlogItem({ blogIndex = "", imgSrc = "", name = "", description = "", lo
                             <p className="blg_fll_description" dangerouslySetInnerHTML={{ __html: longDescription }}></p>
                             {bottomImage ? <img className="blg_fll_image" src={imgSrc} /> : <></>}
                             <div className="reactions_section">
-                                <button onClick={() => handleReaction("like")}>👍 Like ({reactions.like})</button>
-                                <button onClick={() => handleReaction("love")}>❤️ Love ({reactions.love})</button>
+                                <button onClick={() => handleReaction("like")}><BiSolidLike/> Like ({reactions.like})</button>
+                                <button onClick={() => handleReaction("love")}><BiSolidHeart/> Love ({reactions.love})</button>
                             </div>
                             <div className="comments_section">
                                
@@ -114,9 +115,9 @@ function BlogItem({ blogIndex = "", imgSrc = "", name = "", description = "", lo
                 </div>
                 <div className="blog_card_bot">
                 <div className="blog_card_status">
-                <span>👍:{reactions.like}</span>
-                <span>❤️:{reactions.love}</span>
-                <span>💬:{comments!=null && comments!=undefined?comments.length:0}</span>
+                <span id="reaction-icon"><BiSolidLike/>:{reactions.like}</span>
+                <span id="reaction-icon"><BiSolidHeart/>:{reactions.love}</span>
+                <span id="reaction-icon"><BiSolidMessage/>:{comments!=null && comments!=undefined?comments.length:0}</span>
                 </div>
                 <button className="blog_card_button" id="button">Read More</button>
                 </div>

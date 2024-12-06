@@ -194,7 +194,10 @@
 .blog_card_title{
     height: 10%;
 }
-
+#reaction-icon
+{
+    color: var(--color);
+}
 @media screen and (min-width:800px) {
     .blg_Instance{
     width: 800px;

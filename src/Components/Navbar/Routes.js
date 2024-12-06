@@ -5,7 +5,7 @@ import Blog from "./../../Pages/Blog/Blog";
 import MyProjects from "./../../Pages/MyProjects/MyProjects";
 import Contact from "./../../Pages/Contact/Contact";
 import Gallery from "../../Pages/Gallery/Gallery";
-import BlogPage from "../../Pages/CreateBlog/BlogPage";
+// import BlogPage from "../../Pages/CreateBlog/BlogPage";
 function RouteResources() {
     return (
          <Routes>
@@ -18,7 +18,7 @@ function RouteResources() {
              <Route path="/gallery" element={<Gallery />} />
               <Route path="/projects" element={<MyProjects/>}/>
               <Route path="/contact" element={<Contact/>}/>
-              <Route path="/createblog" element={<BlogPage/>}/>
+              {/* <Route path="/createblog" element={<BlogPage/>}/> */}
          </Routes>
         // </HashRouter>
 
