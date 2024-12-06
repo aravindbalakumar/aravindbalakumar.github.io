@@ -1,0 +1,177 @@
+/* Alternate Blog Page Design */
+
+/* General Page Styles */
+.blog-page {
+  font-family: 'Roboto', sans-serif;
+  padding: 30px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Blog Header */
+.blog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.blog-header h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.blog-header button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.blog-header button:hover {
+  background-color: #0056b3;
+}
+
+/* Add Post Form */
+.add-post-form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.add-post-form input,
+.add-post-form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.add-post-form button {
+  padding: 10px 15px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-post-form button:hover {
+  background-color: #218838;
+}
+
+/* Post Card */
+.post-card {
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.post-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.post-image {
+  flex: 1;
+  max-height: 350px;
+  object-fit: cover;
+}
+
+.post-content {
+  flex: 2;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.post-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.post-body {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.reactions {
+  margin-top: 20px;
+}
+
+.reactions button {
+  margin-right: 10px;
+  padding: 10px 15px;
+  background: #888a8c;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.reactions button:hover {
+  background-color: #e2e6ea;
+}
+
+/* Edit Banner */
+.edit-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #007bff;
+  color: #fff;
+  border-bottom: 2px solid #0056b3;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.edit-banner h2 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .blog-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .post-card {
+    flex-direction: column;
+  }
+
+  .post-image {
+    width: 100%;
+  }
+
+  .post-content {
+    padding: 15px;
+  }
+
+  .edit-banner {
+    padding: 15px;
+  }
+}

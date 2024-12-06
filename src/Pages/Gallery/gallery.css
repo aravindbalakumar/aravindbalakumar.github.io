@@ -38,6 +38,7 @@ justify-self: center;
     padding: 0px;
     color: var(--color);
     background-color: #1717179b;
+    animation: fadein 1s ease-in-out
 }
 #gallScrollView
 {
@@ -63,6 +64,7 @@ justify-self: center;
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
+    animation: zoomIn 0.8s ease-in-out
 }
 #gall_view_port
 {
@@ -77,6 +79,7 @@ justify-self: center;
     gap: 10px;
     justify-self: center;
     align-content: flex-start;
+    
 }
 #gallery_img_card
 {
@@ -99,4 +102,22 @@ justify-self: center;
 {
     grid-row: 2/3;
     grid-column: 1/2;
+}
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

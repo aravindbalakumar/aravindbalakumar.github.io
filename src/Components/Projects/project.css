@@ -13,6 +13,12 @@
     border-radius: 2.5%;
     box-shadow: 0px 10px 30px var(--panelColor);
     background-color: var(--panelColor);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#prjt_card:hover {
+    transform: scale(1.03); /* Slight zoom effect */
+    z-index: inherit;
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
 }
 
 #prjt_card_image_container {
@@ -100,6 +106,7 @@
     left: 0;
     right: 0;
     bottom: 0;
+    z-index: 2;
     background-color: var(--panelColor);
     border-radius: 2.5%;
 }

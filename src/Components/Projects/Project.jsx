@@ -82,7 +82,7 @@ function Project({ projectDatum }) {
                             </div>
                         </div>
                     </div>
-                </div> : <></>}
+                </div> : 
             <div id="prjt_card">
                 <div id="prjt_card_title"><h2>{projectDatum.Name}</h2></div>
                 <div id="prjt_card_image_container"><img id="prjt_card_image" src={require(`./../../Assets/Images/ProjectImages/${projectDatum.Logo}`)}></img></div>
@@ -98,7 +98,7 @@ function Project({ projectDatum }) {
                 <div id="prjt_card_viewMore">
                     <button id="button" onClick={ToggleProject}>VIEW MORE</button>
                 </div>
-            </div>
+            </div>}
         </>
     );
 }
